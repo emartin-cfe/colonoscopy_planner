@@ -1,0 +1,303 @@
+li {
+	margin-bottom:10px;
+	}
+
+#container
+{
+	margin: 0 auto;
+	width: 700px;
+	background:#fff;
+}
+
+#container img {
+	max-width: 650px;
+	}
+
+#header
+{
+	background:#FFF;
+	padding: 20px;
+	color:#555;
+}
+
+#header h1 {
+	font-family:"Verdana";
+	font-size:200%;
+	margin: 0 0 0 1; 
+	}
+
+@media print
+{    
+	#navigation { display: none !important; }
+	#footer { display: none !important; }
+	#left_button { display: none !important; }
+	#right_button { display: none !important; }
+	#page_number { margin-top: 20px !important; margin-left: 200px !important; }
+	.btn-group { display: none !important; }
+}
+
+#navigation
+{
+	display:none;
+	float: left;
+	width: 700px;
+	background:#0B7DBA;
+}
+
+#navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+#navigation li a
+{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color:#fff;
+	text-decoration: none;
+	border-right: 1px solid#fff;
+}
+
+#navigation li a:hover { background:#383; }
+
+#content
+{
+	clear: left;
+	padding: 20px;
+}
+
+#inner_content
+	{
+	min-height:630px;
+	}
+
+#content p {
+	line-height:170%;
+	}
+
+#content p.factoid {
+	color:#0D7FDB;
+	margin-top:20px;
+	line-height:220%;
+	padding-bottom:20px;
+	}
+
+#content span.emphasis {
+	font-size:20px;
+	}
+
+#content p.short {
+	margin-top:30px;
+	line-height:20px;
+	}
+
+#content span.short {
+	font-size:18px;
+	}
+
+#content ul.factoid {
+	margin-bottom:30px;
+	}
+
+#content ul.preparing {
+	font-size:14px;
+	line-height:1.5em;
+	margin-top:30px;
+	margin-bottom:60px;
+	}
+
+#content h2
+{
+	color:#0F8DD1;
+	font-size: 160%;
+	margin: 1em 0 .5em;
+}
+
+p.avoid {
+	color:red;
+	font-weight:bold;
+	margin-bottom:105px;
+	}
+
+p.prefer {
+	color:green;
+	font-weight:bold;
+	}
+
+#content h2.top {
+	border-bottom: 1px solid #BBB;
+	}
+
+img.left_aligned {
+	margin-right:30px;
+	}
+
+img.right_aligned {
+	margin-top:50px;
+	margin-bottom:20px;
+	margin-right:0px;
+	margin-left:30px;
+	height:300px;
+	}
+
+img.right_aligned_2 {
+	height:260px;
+	margin-top:30px;
+	margin-left:20px;
+	}
+
+img.drinks_ok {
+	margin-top:20px;
+	margin-left:50px;
+	}
+
+img.foods_ok {
+	margin-top:0px;
+	margin-left:20px;
+	margin-bottom:40px;
+	}
+
+img.foods_not_ok {
+	margin-top:20px;
+	margin-left:0px;
+	}
+
+img.colon_images {
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:20px;
+	width: 350px;	
+	}
+
+div.colon_container {
+	margin-top:20px;
+	display:block;
+	width:100%;
+	height:150px;
+	}
+
+div.colon_container p {
+	font-size:12px;
+	}
+
+div.colon_container_2 {
+	margin-top:20px;
+	margin-bottom:0px;
+	display:block;
+	width:100%;
+	}
+
+div.colon_container_2 p {
+	font-size:12px;
+	}
+
+img.doctor2 {
+	height:300px;
+	margin-top:20px;
+	margin-left:85px;
+	}
+
+div.colonoscopy {
+	margin-top:30px;
+	margin-left:25px;
+	margin-bottom:30px;
+	width:550px;
+	}
+
+div.colonoscopy p {
+	font-size:14px;
+	}
+
+#footer_divider {
+	background:#FFA523;
+	padding: 3px;
+	height: 2px;
+	}
+
+#footer
+{
+	background:#ffffff;
+	text-align: right;
+	padding: 20px;
+	height: 50px;
+	color:#0F8DD1;
+	font-size:16px;
+	font-variant:small-caps;
+}
+
+#left_button
+{
+display:inline-block;
+margin-top:25px;
+margin-right:0px;
+text-align:center;
+}
+
+#page_number {
+	color:#0F8DD1;
+	font-size:18px;
+	display:inline-block;
+	width:185px;
+	text-align:center;
+	}
+
+#right_button
+{
+display:inline-block;
+margin-top:25px;
+text-align:center;
+}
+
+button {
+	width:230px;
+	}
+
+
+img.colonoscopy {
+	margin-left:75px;
+	width:400px;
+	}
+
+img.gi_tract {
+	margin-left:60px;
+	}
+
+img.calendar {
+	margin-left:0px;
+	margin-right:0px;
+	}
+
+img.logo {
+	margin-left:130px;
+	margin-top:40px;
+	}
+
+img.logo_small {
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+
+p.large {
+	font-size:150%;
+	}
+
+span.red {
+	color:red;
+	}
+
+span.green {
+	color:green;
+	}
+
+ul.hidden_bullets {
+	list-style-type: none;
+	}
