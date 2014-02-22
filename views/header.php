@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="javascript/jquery.knob.js"></script>
 </head>
 
 <body>

@@ -15,4 +15,3 @@
 		<h2>What if I take a blood thinner like Coumadin, or warfarin?</h2>
 		<p>Please check with your doctor as soon as possible to determine how to proceed. You will continue to take your Coumadin or warfarin after the colonoscopy unless your doctor gives you other instructions.</p>
 
-		<br/><br/><br/><br/><br/>

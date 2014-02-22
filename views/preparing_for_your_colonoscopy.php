@@ -10,7 +10,5 @@
 			<li>You may also need to change your medication routine if you take medicine like blood thinners, diabetes medicine, or fish oil.</li>
 		</ul>
 
-		<br/>
 
-		<p>The day before and the day of guides will walk you through the process of preparing for your colonoscopy. At the end of this guide there is a checklist of things you'll need to do.</p>
 

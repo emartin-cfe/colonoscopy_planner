@@ -7,7 +7,7 @@
 
 	$lookups = array(	'section_name' => 'About This Guide',
 				'next_page' => 'about_your_intestines.php',
-				'page_num' => '1', 'total_pages' => '20');
+				'page_num' => '1', 'total_pages' => '19');
 
 	$page->render('views/footer.php', $lookups);
 ?>

@@ -1,5 +1,5 @@
 		<h2>About This Guide</h2>
-		<p>You've been scheduled for a colonoscopy. <b>Colonoscopy can find cancer and save lives.</b> This guide will help you get ready. We know it can be challenging to get ready for a colonoscopy. We also know that you may have questions about the test. We created this guide to help answer your questions. You should then print off and complete the checklist provided at the end of this guide as you prepare for your procedure.</p>
+		<p>You've been scheduled for a colonoscopy. <b>Colonoscopy can find cancer and save lives.</b> This guide will help you get ready. We know it can be challenging to get ready for a colonoscopy. We created this guide to help answer your questions.</p>
 		<p>Please carefully read these instructions, as you will more likely have a successful colonoscopy.</p>
 
 		<h2>Preparing for your colonoscopy</h2>

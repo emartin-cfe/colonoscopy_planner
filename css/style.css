@@ -171,6 +171,7 @@ img.foods_not_ok {
 	}
 
 img.colon_images {
+	float:right;
 	margin-top:0px;
 	margin-bottom:0px;
 	margin-left:20px;
@@ -179,8 +180,6 @@ img.colon_images {
 
 div.colon_container {
 	margin-top:20px;
-	display:block;
-	width:100%;
 	height:150px;
 	}
 
@@ -189,9 +188,8 @@ div.colon_container p {
 	}
 
 div.colon_container_2 {
-	margin-top:20px;
+	margin-top:50px;
 	margin-bottom:0px;
-	display:block;
 	width:100%;
 	}
 
@@ -236,12 +234,15 @@ div.colonoscopy p {
 #left_button
 {
 display:inline-block;
-margin-top:25px;
+margin-top:0px;
 margin-right:0px;
 text-align:center;
 }
 
-#page_number {
+#progress_bar {
+	display: table-cell;
+	vertical-align:middle;
+
 	color:#0F8DD1;
 	font-size:18px;
 	display:inline-block;
@@ -252,7 +253,7 @@ text-align:center;
 #right_button
 {
 display:inline-block;
-margin-top:25px;
+margin-top:0px;
 text-align:center;
 }
 
@@ -300,4 +301,11 @@ span.green {
 
 ul.hidden_bullets {
 	list-style-type: none;
+	}
+
+div.bottom_nav 	{
+	display: table;
+	clear:both;
+	margin-left:20px;
+	margin-bottom:20px;
 	}

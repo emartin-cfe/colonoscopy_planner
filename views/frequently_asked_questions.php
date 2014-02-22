@@ -4,7 +4,7 @@
 		<p>NO. You will receive medicine to make you sleepy during the test. That means you cannot drive home. You must arrange for someone to drive you home after the test. You may also take a taxi or bus, but only if you have an adult who can escort you home.</p>
 
 		<h2>How long will the test take?</h2>
-		<p>The test itself takes about 10-30 minutes. But, expect to spend more time at the doctors' since you'll need to prepare for and recover from your test. Expect to spend about 2-3 hours at your facility, although this may vary.</p>
+		<p>The test itself takes about 10-30 minutes. But, expect to spend more time at the doctors' since you'll need to prepare for and recover from your test. Expect to spend about 2-3 hours at your facility.</p>
 
 		<h2>What are the side effects of the "bowel prep"?</h2>
 		<p>You will have lots of diarrhea from the bowel prep. This will start anywhere from a few minutes to three hours after you start your prep. So plan to be home, and plan to be near a toilet. Most people have bloating and abdominal discomfort. This is normal. Do not be alarmed if you feel these symptoms. Many people have nausea. This is also normal. Some people do not like the taste or smell of the medicine. Please do not let this get in the way of taking the medicine as directed. Rarely, some people throw up while taking the prep. If this happens, stop taking the prep and call your doctor.</p> 
