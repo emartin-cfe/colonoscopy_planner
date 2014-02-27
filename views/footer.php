@@ -11,8 +11,8 @@
 		</div>
 
 		<div id="progress_bar">
-			<input type="text" value="<?=htmlspecialchars(round($page_num/$total_pages*100));?>" class="dial" data-readOnly=true data-width="50" data-fgColor="#0D7FDB;">
-			<script>$(function() {$(".dial").knob({'min':0,'max':100,});});</script>
+			<input id="my_progress" type="text" value="<?=htmlspecialchars($page_num);?>" class="dial" data-readOnly=true data-width="50" data-fgColor="#0D7FDB;">
+			<script>$(function() {$(".dial").knob({'min':0,'max':<?=htmlspecialchars($total_pages);?>,});});</script>
 		</div>
 
 		<div id="right_button">

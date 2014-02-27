@@ -13,5 +13,5 @@
 
 		<div class="alert alert-info">
 			<p class="large">An example</p>
-			<p>If your colonoscopy is scheduled for 10:00 AM in the morning, you will need to take the second part of your prep at 6:00 AM in the morning.</p>
+			<p>If your colonoscopy is scheduled for 10:00 AM in the morning, you will need to take the second part of your prep at 6:00 AM on the same morning.</p>
 		</div>

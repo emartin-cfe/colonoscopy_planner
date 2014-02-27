@@ -1,6 +1,6 @@
  		<link rel="stylesheet" type="text/css" href="css/table_of_contents.css">
 
-		<h2>What's Inside This Information Package?</h2>
+		<h2>What's Inside This Guide?</h2>
 
 		<ul id="toc">
 			<li><span>About This Guide</span> <a href="about_this_guide.php">Page 1</a></li>
@@ -20,5 +20,5 @@
 
 		<div class="alert alert-info">
 			<p class="large"><b>Help us help you!</b></p>
-			<p>If you follow these instructions, then you'll give your doctor the best chance of doing this right the first time. That way you won't need to repeat the test. Let's make this "one and done" together.</p>
+			<p>If you follow these instructions, then you'll give your doctor the best chance of doing this right the first time. That way you won't need to repeat the test.</p>
 		</div>

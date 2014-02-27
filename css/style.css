@@ -233,7 +233,7 @@ div.colon_container {
 	}
 
 div.colon_container p {
-	font-size:12px;
+	font-size:14px;
 	}
 
 div.colon_container_2 {
@@ -243,7 +243,7 @@ div.colon_container_2 {
 	}
 
 div.colon_container_2 p {
-	font-size:12px;
+	font-size:14px;
 	}
 
 img.doctor2 {
@@ -364,4 +364,71 @@ div.bottom_nav 	{
 	clear:both;
 	margin-left:20px;
 	margin-bottom:20px;
+	}
+
+h1.question {
+	text-align:center;
+	margin-top:50px;
+	margin-bottom:30px;
+	}
+
+#yes_button {
+	display:inline-block;
+	margin-top:0px;
+	margin-left:70px;
+	margin-right:50px;
+	margin-bottom:50px;
+	text-align:center;
+	}
+
+#green {
+	color:green;
+	}
+
+#no_button {
+	display:inline-block;
+	text-align:center;
+	}
+
+#red {
+	color:red;
+	}
+
+div.question_interface {
+	display: table;
+	clear:both;
+	margin-left:20px;
+	margin-bottom:20px;
+	}
+
+div.faq_ok {
+	display:none;
+	}
+
+div.question_warning {
+	display:none;
+	}
+
+div.proceed {
+	text-align:center;
+	display:none;
+	}
+
+img.question_image_1 {
+	margin-bottom:35px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.question_image_2 {
+	margin-bottom:35px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	display:none;
+	}
+
+p.question_warning {
+	font-size:140%;
 	}
