@@ -1,0 +1,69 @@
+/* Center text when asking patient questions */
+h1.question {
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:20px;
+	}
+
+/* Buttons for when asking patient questions */
+div.question_interface {
+	margin-left:auto;
+	margin-right:auto;
+	width:600px;
+	text-align:center;
+	}
+
+div.question_interface button {
+	width:170px;
+	margin-right:10px;
+	margin-bottom:30px;
+	}
+
+#question_back {
+	float:left;
+        width:50px;
+        }   
+
+#question_forward {
+	float:right;
+        width:50px;
+        }  
+
+/* Question if checkmark+cross glyphicons on yes/no questions */
+#green { color: green; }
+#red { color:red; }
+
+
+/* Yellow warning popup box */
+div.question_warning {
+	display:none;
+	}
+
+/* Yellow warning popup box */
+div.question_warning p.question_warning {
+        font-size:130%;
+        } 
+
+/* "Next question" button that appears when a user answers the question */
+div.proceed {
+	display:none;
+	text-align:center;
+	margin-bottom:20px;
+	}
+
+/* The image that appears before the question is answered */
+img.question_image_1 {
+	margin-bottom:35px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+/* The question that appears after the question is answered */
+img.question_image_2 {
+	margin-bottom:35px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	display:none;
+	}
