@@ -12,7 +12,9 @@
 				'notify_type' => 'danger',
 				'question_warning' => 'STOP taking fish oil two days before your colonoscopy.',
 				'next_page_yes' => $next_page,
-				'next_page_no' => $next_page);
+				'next_page_no' => $next_page,
+				'previous_page' => 'preparing_for_your_colonoscopy.php',
+				'section_name' => 'Your Medication Routine');
 
 	$page->render('views/question_answer.php', $lookups);
 

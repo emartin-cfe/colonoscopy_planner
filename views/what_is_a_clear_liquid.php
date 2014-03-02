@@ -1,9 +1,14 @@
+
+		<link rel="stylesheet" type="text/css" href="css/what_is_a_clear_liquid.css">
+
 		<h2>What Is a "Clear Liquid"?</h2>
 
-		<p>As you get ready for your colonoscopy, you must drink only clear liquids. A liquid is considered "clear" if you can read something through it. Use this test to figure out what you can drink, and what you cannot drink.</p>
+		<p>As you get ready for your colonoscopy, you must drink only clear liquids. A liquid is considered "clear" if you can read something through it.</p>
 
-		<img class="left_aligned" align="left" height="400" width="200" src="images/juice.png" alt="some_text">
 		<br/>
+
+		<img class="left_aligned" height="400" src="images/juice.png">
+
 		<p><b>This is orange juice</b></p>
 		<p>Orange juice is not clear because you can't read the newspaper through it.</p>
 		<p class="avoid">Don't drink this.</p>

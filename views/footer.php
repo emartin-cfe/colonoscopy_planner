@@ -23,7 +23,7 @@
 	</div>
 
 	<div id="footer_divider"></div>
-	<div id="footer"><?=htmlspecialchars($section_name)." | Page ".htmlspecialchars($page_num); ?></div>
+	<div id="footer"><?=htmlspecialchars($section_name); ?></div>
 </div>
 
 <script src="magnific-popup/jquery.magnific-popup.js"></script>

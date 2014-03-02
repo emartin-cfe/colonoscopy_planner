@@ -12,7 +12,9 @@
 				'notify_type' => 'success',
 				'question_warning' => 'You may continue to take this medicine as needed.',
 				'next_page_yes' => $next_page,
-				'next_page_no' => $next_page);
+				'next_page_no' => $next_page,
+				'section_name' => 'Your Medication Routine (Step 2)',
+				'previous_page' => 'anti_inflammatories.php');
 
 	$page->render('views/question_answer.php', $lookups);
 ?>

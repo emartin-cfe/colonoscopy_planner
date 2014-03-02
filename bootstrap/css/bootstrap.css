@@ -225,9 +225,11 @@ table {
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
-    content: " (" attr(href) ")";
+	content: "";
   }
+
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
