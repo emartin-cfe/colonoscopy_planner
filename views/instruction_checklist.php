@@ -30,9 +30,10 @@
 
 		<h2>Day of your colonoscopy</h2>
 		<ul class="hidden_bullets">
-			<li><input type="checkbox"> If you take diabetic medicine, do not take until after the test.</li>
-			<li><input type="checkbox"> Take the <b>second part</b> of bowel prep 4 hours before your test.</li>
+			<li><input type="checkbox"> Breakfast - 4 cups of clear liquids, no solid food.</li>
+			<li><input type="checkbox"> If you take diabetic medicine, do not take until after the colonoscopy.</li>
+			<li><input type="checkbox"> Take the <b>second part</b> of bowel prep 4 hours before your appointment.</li>
 			<li><input type="checkbox"> Drink 2 cups of clear sports drink before your appointment.</li>
 			<li><input type="checkbox"> Report for your colonoscopy.</li>
-			<li><input type="checkbox"> Have a family member drive you home.</li>
+			<li><input type="checkbox"> Afterwards, have someone drive you home or take the bus.</li>
 		</ul>

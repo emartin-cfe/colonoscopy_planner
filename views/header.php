@@ -15,8 +15,8 @@
 <div id="container">
 
 	<div id="header">
-		<img class="logo_small" align="left" height="80" width="200" src="images/logo.jpg" alt="some_text">
-		<h1>Preparing for your colonoscopy</h1>
+		<img class="logo_small" height="60" src="images/UBC_logo.png">
+		<h1>Your colonoscopy guide</h1>
 	</div>
 
 	<div id="top_navigation" class="btn-group btn-group">

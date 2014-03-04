@@ -17,6 +17,4 @@
 				'section_name' => 'Your Medication Routine');
 
 	$page->render('views/question_answer.php', $lookups);
-
-	#$page->render('views/footer.php', $lookups);
 ?>
