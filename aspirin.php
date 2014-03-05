@@ -6,7 +6,7 @@
 
 	$next_page = "blood_thinner.php";
 
-	$lookups = array(	'question' => 'Do you take aspirin or Plavix?',
+	$lookups = array(	'question' => '5) Do you take aspirin or Plavix?',
 				'image_1' => 'aspirin.jpg', 'height_1' => 260, 'width_1' => 391,
 				'image_2' => 'aspirin_OK.jpg', 'height_2' => 260, 'width_2' => 391,
 				'notify_type' => 'success',

@@ -2,7 +2,7 @@
       #map_canvas {
 	float:right;
         width: 225px;
-        height: 225px;
+        height: 220px;
       }   
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>

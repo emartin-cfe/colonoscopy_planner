@@ -30,10 +30,16 @@
 	</div>
 
 	<div class="proceed" id="proceed">
+		<div>
+			<button id="proceed_back" type="button" class="btn btn-default btn-lg" onclick="window.location='<?=htmlspecialchars($previous_page)?>';">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			Previous page</button>
+		</div>
+
 		<div id="yes_button">
-			<button type="button" class="btn btn-default btn-lg" onclick="window.location='<?=htmlspecialchars($next_page_no)?>';">
-			Next question
-			<span id="green" class="glyphicon glyphicon-arrow-right"></span></button>
+			<button id="proceed_forward" type="button" class="btn btn-default btn-lg" onclick="window.location='<?=htmlspecialchars($next_page_no)?>';">
+			Next page
+			<span class="glyphicon glyphicon-chevron-right"></span></button>
 		</div>
 	</div>
 

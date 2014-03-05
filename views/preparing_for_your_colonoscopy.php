@@ -4,11 +4,14 @@
 
 		<br/><br/><br/>
 
+		<p>We need you to answer some questions to help you manage your medication routine while preparing for your colonoscopy.</p>
+
+		<br/>
+
 		<p>You need to change your medication routine if you take diabetes medicine, fish oil, or blood thinners.</p>
 
 		<br/>
 
-		<p>On the next page, we will ask questions to help you manage your medication routine while preparing for your colonoscopy.</p>
 
 
 

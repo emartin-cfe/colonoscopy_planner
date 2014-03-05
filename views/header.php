@@ -20,10 +20,10 @@
 	</div>
 
 	<div id="top_navigation" class="btn-group btn-group">
-		<button type="button" class="btn btn-primary" onclick="window.location='about_this_guide.php'">Start over</button>
-		<button type="button" class="btn btn-primary" onclick="window.location='table_of_contents.php'">Table of contents</button>
-		<button type="button" class="btn btn-primary" onclick="window.location='instruction_checklist.php'">Checklist</button>
-		<button type="button" class="btn btn-primary" onclick="window.location='contact_info.php'">Contact doctor</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="window.location='about_this_guide.php'">Start over</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="window.location='table_of_contents.php'">Table of contents</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="window.location='instruction_checklist.php'">Checklist</button>
+		<button type="button" class="btn btn-primary btn-lg" onclick="window.location='contact_info.php'">Clinic location</button>
 	</div>
 
 	<div id="content">

@@ -46,9 +46,26 @@ div.question_warning p.question_warning {
 
 /* "Next question" button that appears when a user answers the question */
 div.proceed {
+	margin-left:auto;
+	margin-right:auto;
+	width:600px;
 	display:none;
 	text-align:center;
-	margin-bottom:20px;
+	margin-bottom:80px;
+	}
+
+div.proceed button {
+        width:250px;
+        margin-right:10px;
+        margin-bottom:30px;
+        }  
+
+#proceed_back {
+	float:left;
+	}
+
+#proceed_forward {
+	float:right;
 	}
 
 /* The image that appears before the question is answered */

@@ -99,11 +99,10 @@ img.right_aligned {
 /* The blue text below the footer divider */
 #footer {
 	text-align: right;
-	padding: 20px;
+	padding: 15px;
 	height: 50px;
 	color:#0F8DD1;
 	font-size:130%;
-	font-variant:small-caps;
 	}
 
 /* Previous page and next page navigation div */

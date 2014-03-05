@@ -6,7 +6,7 @@
 
 	$next_page = "diabetes.php";
 
-	$lookups = array(	'question' => 'Do you take fish oil?',
+	$lookups = array(	'question' => '1) Do you take fish oil?',
 				'image_1' => 'fish_oil.jpg', 'height_1' => 200, 'width_1' => 200,
 				'image_2' => 'fish_oil_no.jpg', 'height_2' => 200, 'width_2' => 200,
 				'notify_type' => 'danger',

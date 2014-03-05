@@ -6,7 +6,7 @@
 
 	$next_page = "preparing_for_your_colonoscopy_2.php";
 
-	$lookups = array(	'question' => 'Do you take a blood thinner like Coumadin, or warfarin?',
+	$lookups = array(	'question' => '6) Do you take a blood thinner like Coumadin, or warfarin?',
 				'image_1' => 'warfarin_1.png', 'height_1' => 227, 'width_1' => 358,
 				'image_2' => 'warfarin_2.png', 'height_2' => 200, 'width_2' => 358,
 				'notify_type' => 'warning',

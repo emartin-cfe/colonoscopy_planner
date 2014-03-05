@@ -4,4 +4,8 @@
 
 		<br/><br/><br/><br/>
 
+		<p>You should only drink clear liquids and avoid solid foods while preparing for your colonoscopy.</p>
+
+		<br/>
+
 		<p>In this part of the guide we will talk about what it means to be a clear liquid, and what foods you can eat.</p>

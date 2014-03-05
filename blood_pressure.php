@@ -6,7 +6,7 @@
 
 	$next_page = "anti_inflammatories.php";
 
-	$lookups = array(	'question' => 'Do you take blood pressure medicine?',
+	$lookups = array(	'question' => '3) Do you take blood pressure medicine?',
 				'image_1' => 'pills_blood_pressure.png', 'height_1' => 200, 'width_1' => 598,
 				'image_2' => 'pills_blood_pressure_yes.png', 'height_2' => 257, 'width_2' => 598,
 				'notify_type' => 'success',

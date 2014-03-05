@@ -1,5 +1,5 @@
 		<h2>What Foods Are <span class="red">NOT OK?</span></h2>
 
-		<p>The previous page specifies the types of food you can have. Other than these exceptions, do not have any solid food while on a clear liquid diet.<p>
+		<p>You cannot consume any food that are solid while on a clear liquid diet. Other than the foods shown on the previous page, do not eat any solid food.<p>
 
 		<img class="centered" height="500" src="images/foods_not_ok.png">

@@ -11,15 +11,20 @@
 		</div>
 
 		<div id="progress_bar">
-			<input id="my_progress" type="text" value="<?=htmlspecialchars($page_num);?>" class="dial" data-readOnly=true data-width="50" data-fgColor="#0D7FDB;">
-			<script>$(function() {$(".dial").knob({'min':0,'max':<?=htmlspecialchars($total_pages);?>,});});</script>
+			<?="Step " . htmlspecialchars($page_num) . " of " . htmlspecialchars($total_pages) . "\n"?>
 		</div>
 
-		<div id="right_button">
-			<button type="button" class="btn btn-default btn-lg" <?=isset($next_page) ? "onclick=\"window.location='" . htmlspecialchars($next_page) . "'\"" : 'disabled';?>>
-			Next page
-			<span class="glyphicon glyphicon-chevron-right"></span></button>
-		</div>
+		<?php
+
+		if (isset($next_page)) {
+			echo 	"<div id='right_button'>\n" .
+				"\t\t\t<button type='button' class='btn btn-default btn-lg' onclick='window.location=\"$next_page\";'>\n" .
+				"\t\t\tNext page\n" .
+				"\t\t\t<span class='glyphicon glyphicon-chevron-right'></span></button>\n" .
+				"\t\t</div>\n";
+			}
+		?>
+
 	</div>
 
 	<div id="footer_divider"></div>

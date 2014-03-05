@@ -6,7 +6,7 @@
 
 	$next_page = "blood_pressure.php";
 
-	$lookups = array(	'question' => 'Do you take diabetes medicine?',
+	$lookups = array(	'question' => '2) Do you take diabetes medicine?',
 				'image_1' => 'diabetes_pills.png', 'height_1' => 260, 'width_1' => 640,
 				'image_2' => 'diabetes_pills_no.png', 'height_2' => 260, 'width_2' => 640,
 				'notify_type' => 'danger',

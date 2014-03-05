@@ -6,7 +6,7 @@
 
 	$next_page = "aspirin.php";
 
-	$lookups = array(	'question' => 'Do you take anti-inflammatories such as Advil, Ibuprofen, or Motrin?',
+	$lookups = array(	'question' => '4) Do you take anti-inflammatories such as Advil or Ibuprofen?',
 				'image_1' => 'anti_inflammatories.jpg', 'height_1' => 209, 'width_1' => 582,
 				'image_2' => 'anti_inflammatories_ok.jpg', 'height_2' => 209, 'width_2' => 582,
 				'notify_type' => 'success',
