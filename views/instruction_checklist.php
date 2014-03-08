@@ -1,9 +1,13 @@
+		<script>
+			document.checklist_printed = false;
+		</script>
+
 		<br/>
 
 		<div class="print_legend">
 			<p>Please print this checklist and use it as your colonoscopy planner.</p>
 
-			<button id="print_me" type="button" class="btn btn-default btn-lg" onclick="window.print();">
+			<button id="print_me" type="button" class="btn btn-default btn-lg" onclick="window.print(); document.checklist_printed = true;">
 				<span class="glyphicon glyphicon-print"></span> Print checklist!
 			</button>
 		</div>
@@ -23,7 +27,7 @@
 			<li><input type="checkbox"> Lunch - 4 cups of clear liquids, no solid food.</li>
 			<li><input type="checkbox"> Dinner - 4 cups of clear liquids, no solid food.</li>
 			<li><input type="checkbox"> Take the <b>first part</b> of your bowel prep in the evening.</li>
-			<li><input type="checkbox"> After your prep, be near a toilet, expect bloating and nausea.</li>
+			<li><input type="checkbox"> After taking bowel prep, be near a toilet, expect bloating and nausea.</li>
 		</ul>
 
 		<br/>

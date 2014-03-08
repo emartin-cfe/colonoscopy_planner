@@ -1,4 +1,5 @@
 <?php
+	require('num_sections.php');
 	require('rendering/rendering_engine.php');
 	$page = new Page();
 
@@ -13,8 +14,11 @@
 				'question_warning' => 'Keep taking your medicine. On the day of your test, take your blood pressure medicine two hours before your test.',
 				'next_page_yes' => $next_page,
 				'next_page_no' => $next_page,
-				'section_name' => 'Your Medication Routine (Step 2)',
+				'section_name' => "Managing your medication routine (Step 2 of $num_sections)",
 				'previous_page' => 'diabetes.php');
 
 	$page->render('views/question_answer.php', $lookups);
+
+	require('logging/audit.php');
+	if(!empty($_GET['auth'])) { log_access($_GET['auth'], basename( __FILE__)); }
 ?>

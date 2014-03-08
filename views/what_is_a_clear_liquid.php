@@ -13,7 +13,7 @@
 		<p>Orange juice is not clear because you can't read the newspaper through it.</p>
 		<p class="avoid">Don't drink this.</p>
 
-		<p><b>This is apple juice.</b></p>
+		<p><b>This is apple juice</b></p>
 		<p>Apple juice is clear because you can read a newspaper print through it.</p>
 		<p class="prefer">You can drink this.</p>
 

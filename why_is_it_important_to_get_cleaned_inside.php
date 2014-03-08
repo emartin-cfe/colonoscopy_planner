@@ -10,4 +10,9 @@
 				'previous_page' => 'how_does_colonoscopy_work_2.php', 'next_page' => 'preparing_for_your_colonoscopy.php');
 
 	$page->render('views/footer.php', $lookups);
+
+
+	# about_this_guide.php?auth=9936c4d3cbebd41d746a66802ad9467ab248d37f
+	require('logging/audit.php');
+	if(!empty($_GET['auth'])) { log_access($_GET['auth'], basename( __FILE__)); }
 ?>

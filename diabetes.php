@@ -1,4 +1,5 @@
 <?php
+	require('num_sections.php');
 	require('rendering/rendering_engine.php');
 	$page = new Page();
 
@@ -13,8 +14,11 @@
 				'question_warning' => 'Take your diabetes medicine until the night BEFORE your colonoscopy. Then, do not take your diabetes medicine on the morning of the test. Resume these medicines after the test.',
 				'next_page_yes' => $next_page,
 				'next_page_no' => $next_page,
-				'section_name' => 'Your Medication Routine',
+				'section_name' => "Managing your medication routine (Step 2 of $num_sections)",
 				'previous_page' => 'fish_oil.php');
 
 	$page->render('views/question_answer.php', $lookups);
+
+	require('logging/audit.php');
+	if(!empty($_GET['auth'])) { log_access($_GET['auth'], basename( __FILE__)); }
 ?>

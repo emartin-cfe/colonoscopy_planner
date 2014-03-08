@@ -1,4 +1,5 @@
 <?php
+	require('num_sections.php');
 	require('rendering/rendering_engine.php');
 	$page = new Page();
 
@@ -14,7 +15,10 @@
 				'next_page_yes' => $next_page,
 				'next_page_no' => $next_page,
 				'previous_page' => 'preparing_for_your_colonoscopy.php',
-				'section_name' => 'Your Medication Routine');
+				'section_name' => "Managing your medication routine (Step 2 of $num_sections)");
 
 	$page->render('views/question_answer.php', $lookups);
+
+	require('logging/audit.php');
+	if(!empty($_GET['auth'])) { log_access($_GET['auth'], basename( __FILE__)); }
 ?>

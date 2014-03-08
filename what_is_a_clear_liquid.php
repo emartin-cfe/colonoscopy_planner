@@ -10,4 +10,7 @@
 				'previous_page' => 'preparing_for_your_colonoscopy_3.php', 'next_page' => 'what_drinks_are_ok.php');
 
 	$page->render('views/footer.php', $lookups);
+
+	require('logging/audit.php');
+	if(!empty($_GET['auth'])) { log_access($_GET['auth'], basename( __FILE__)); }
 ?>

@@ -1,4 +1,4 @@
-		<h2>Preparing for your meds</h2>
+		<h2>Managing your medication routine while preparing</h2>
 
 		<img class="right_aligned" src="images/doctor_3.jpg" height="250">
 

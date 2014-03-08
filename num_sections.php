@@ -1,3 +1,3 @@
 <?php
-	$num_sections = 6;
+	$num_sections = 5;
 ?>

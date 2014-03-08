@@ -11,4 +11,7 @@
 				'previous_page' => 'day_before_colonoscopy.php', 'next_page' => 'day_of_colonoscopy.php');
 
 	$page->render('views/footer.php', $lookups);
+
+	require('logging/audit.php');
+	if(!empty($_GET['auth'])) { log_access($_GET['auth'], basename( __FILE__)); }
 ?>

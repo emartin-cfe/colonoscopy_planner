@@ -4,7 +4,7 @@
 
 		<ul id="toc">
 			<li><span>About this guide</span> <a href="about_this_guide.php">Section 1</a></li>
-			<li><span>Preparing for your meds</span><a href="preparing_for_your_colonoscopy.php">Section 2</a></li>
+			<li><span>Your medication routine</span><a href="preparing_for_your_colonoscopy.php">Section 2</a></li>
 			<li><span>Calendar</span><a href="preparing_for_your_colonoscopy_2.php">Section 3</a></li>
 			<li><span>What drinks are ok?</span><a href="what_drinks_are_ok.php">Section 4</a></li>
 			<li><span>What foods are ok?</span><a href="what_foods_are_ok.php">Section 4</a></li>
@@ -15,5 +15,5 @@
 
 		<div class="alert alert-info">
 			<p class="large"><b>Let's do this right the first time!</b></p>
-			<p>Let's give your doctor the best chance of doing this right the first time. That way, you won't need to repeat the test.</p>
+			<p>Let's give your doctor the best chance of doing this right the first time. That way, you won't need to repeat the procedure.</p>
 		</div>

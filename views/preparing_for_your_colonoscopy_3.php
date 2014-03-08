@@ -4,7 +4,7 @@
 
 		<br/><br/><br/><br/>
 
-		<p>You should only drink clear liquids and avoid solid foods while preparing for your colonoscopy.</p>
+		<p>You should only drink <span class="image_popup"><a class="image_popup" href="images/drinks_ok.png" title="Do NOT drink cloudy liquids: it will make it hard for the GI doctor to see inside.">clear liquids</a></span> and avoid solid foods while preparing for your colonoscopy.</p>
 
 		<br/>
 

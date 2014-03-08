@@ -9,53 +9,38 @@
             <y>146.00</y>
         </location>
         <size>
-            <width>291.00</width>
-            <height>100.00</height>
+            <width>290.00</width>
+            <height>80.00</height>
         </size>
         <zorder>0</zorder>
         <SQLField>
-            <name><![CDATA[patient_id]]></name>
-            <type><![CDATA[INT]]></type>
-            <referencesField>patient_id</referencesField>
+            <name><![CDATA[SHA1]]></name>
+            <type><![CDATA[VARCHAR(40)]]></type>
+            <referencesField>SHA1</referencesField>
             <referencesTable>patient_notification.Patient</referencesTable>
-            <referencesField><![CDATA[patient_id]]></referencesField>
+            <referencesField><![CDATA[SHA1]]></referencesField>
             <referencesTable><![CDATA[patient_notification.Patient]]></referencesTable>
             <sourceCardinality>0</sourceCardinality>
             <destinationCardinality>0</destinationCardinality>
-            <referencesFieldUID><![CDATA[B0DC5FA9-2D65-4A4F-962E-70565147F10D]]></referencesFieldUID>
+            <referencesFieldUID><![CDATA[D0EED84E-1363-495A-9558-F57EA1F31CAA]]></referencesFieldUID>
             <referencesTableUID><![CDATA[D58163D7-22DF-4356-87C3-FD3E43A0F786]]></referencesTableUID>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[9DF89D39-8BAF-4361-BF74-B29442389BCC]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[webpage]]></name>
+            <name><![CDATA[page_viewed]]></name>
             <type><![CDATA[VARCHAR(255)]]></type>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[F41DB458-96F7-41C2-B5A7-E8843A1965D0]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[date_accessed]]></name>
+            <name><![CDATA[traffic_entryDate]]></name>
             <type><![CDATA[TIMESTAMP]]></type>
             <defaultValue><![CDATA[NOW()]]></defaultValue>
+            <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[449BD72B-C7D6-4959-9C06-BC1F710C2A98]]></uid>
         </SQLField>
-        <SQLIndex>
-            <name><![CDATA[Traffic_idx]]></name>
-            <fieldName><![CDATA[patient_id]]></fieldName>
-            <fieldName><![CDATA[webpage]]></fieldName>
-            <SQLIndexEntry>
-                <name><![CDATA[patient_id]]></name>
-                <prefixSize><![CDATA[]]></prefixSize>
-                <fieldUid><![CDATA[9DF89D39-8BAF-4361-BF74-B29442389BCC]]></fieldUid>
-            </SQLIndexEntry>
-            <SQLIndexEntry>
-                <name><![CDATA[webpage]]></name>
-                <prefixSize><![CDATA[]]></prefixSize>
-                <fieldUid><![CDATA[F41DB458-96F7-41C2-B5A7-E8843A1965D0]]></fieldUid>
-            </SQLIndexEntry>
-            <indexType><![CDATA[UNIQUE]]></indexType>
-            <uid><![CDATA[DE29C7C7-F65A-4BB1-8E0F-8B01E346184A]]></uid>
-        </SQLIndex>
+        <labelWindowIndex><![CDATA[1]]></labelWindowIndex>
         <uid><![CDATA[43C2C157-01AA-4A44-89E3-AA18BF7FEF3C]]></uid>
     </SQLTable>
     <SQLTable>
@@ -63,8 +48,8 @@
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>
-            <x>91.00</x>
-            <y>146.00</y>
+            <x>86.00</x>
+            <y>106.00</y>
         </location>
         <size>
             <width>251.00</width>
@@ -73,10 +58,10 @@
         <zorder>1</zorder>
         <SQLField>
             <name><![CDATA[patient_id]]></name>
-            <type><![CDATA[INT]]></type>
+            <type><![CDATA[VARCHAR(32)]]></type>
             <primaryKey>1</primaryKey>
-            <autoIncrement><![CDATA[1]]></autoIncrement>
-            <forcedUnique><![CDATA[1]]></forcedUnique>
+            <autoIncrement><![CDATA[0]]></autoIncrement>
+            <forcedUnique><![CDATA[0]]></forcedUnique>
             <uid><![CDATA[B0DC5FA9-2D65-4A4F-962E-70565147F10D]]></uid>
         </SQLField>
         <SQLField>
@@ -87,21 +72,42 @@
             <unique><![CDATA[1]]></unique>
         </SQLField>
         <SQLField>
-            <name><![CDATA[SHA1_hash]]></name>
+            <name><![CDATA[SHA1]]></name>
             <type><![CDATA[VARCHAR(40)]]></type>
+            <forcedUnique><![CDATA[1]]></forcedUnique>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[D0EED84E-1363-495A-9558-F57EA1F31CAA]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[patient_entry_date]]></name>
+            <name><![CDATA[patient_entryDate]]></name>
             <type><![CDATA[TIMESTAMP]]></type>
             <defaultValue><![CDATA[NOW()]]></defaultValue>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[C084F1BF-79B9-45E9-B91F-671F1E7A3F3D]]></uid>
         </SQLField>
+        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Table4]]></temporaryOriginalName>
         <uid><![CDATA[D58163D7-22DF-4356-87C3-FD3E43A0F786]]></uid>
     </SQLTable>
+    <SQLComment>
+        <name><![CDATA[Comment1]]></name>
+        <comment><![CDATA[patientID: patient_1
+email: emartin@sfu.ca
+SHA1: 9936c4d3cbebd41d746a66802ad9467ab248d37f]]></comment>
+        <location>
+            <x>155.00</x>
+            <y>316.00</y>
+        </location>
+        <size>
+            <width>579.00</width>
+            <height>144.00</height>
+        </size>
+        <zorder>2</zorder>
+        <commentTitle><![CDATA[Test data]]></commentTitle>
+        <labelColor><![CDATA[{0.999996,1,1,1}]]></labelColor>
+        <temporaryOriginalName><![CDATA[Comment1]]></temporaryOriginalName>
+        <uid><![CDATA[F43016F8-9B06-4CAB-8962-6F8B5D1604A7]]></uid>
+    </SQLComment>
     <SQLDocumentInfo>
         <encodedPrintInfo><![CDATA[BAtzdHJlYW10eXBlZIHoA4QBQISEhAtOU1ByaW50SW5mbwGEhAhOU09iamVjdACF
 koSEhBNOU011dGFibGVEaWN0aW9uYXJ5AISEDE5TRGljdGlvbmFyeQCUhAFpDZKE
@@ -267,9 +273,9 @@ mZkLTlNQYXBlck5hbWWGkoSZmQluYS1sZXR0ZXKGhoY=
         <snapToGrid><![CDATA[0]]></snapToGrid>
         <SourceSidebarWidth><![CDATA[276.000000]]></SourceSidebarWidth>
         <uid><![CDATA[5201982C-CCEE-4C91-A098-99DE1B89F7C6]]></uid>
-        <windowHeight><![CDATA[578.000000]]></windowHeight>
+        <windowHeight><![CDATA[634.000000]]></windowHeight>
         <windowLocationX><![CDATA[334.000000]]></windowLocationX>
-        <windowLocationY><![CDATA[459.000000]]></windowLocationY>
+        <windowLocationY><![CDATA[403.000000]]></windowLocationY>
         <windowScrollOrigin><![CDATA[{0, 0}]]></windowScrollOrigin>
         <windowWidth><![CDATA[1118.000000]]></windowWidth>
     </SQLDocumentInfo>
