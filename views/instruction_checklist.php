@@ -21,7 +21,7 @@
 
 		<br/>
 
-		<h2>One day before your colonoscopy</h2>
+		<h2>Monday September 16</h2>
 		<ul class="hidden_bullets">
 			<li><input type="checkbox"> Breakfast - 4 cups of clear liquids, no solid food.</li>
 			<li><input type="checkbox"> Lunch - 4 cups of clear liquids, no solid food.</li>
@@ -32,7 +32,7 @@
 
 		<br/>
 
-		<h2>Day of your colonoscopy</h2>
+		<h2>Tuesday September 17</h2>
 		<ul class="hidden_bullets">
 			<li><input type="checkbox"> Breakfast - 4 cups of clear liquids, no solid food.</li>
 			<li><input type="checkbox"> If you take diabetic medicine, do not take until after the colonoscopy.</li>

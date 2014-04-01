@@ -1,11 +1,13 @@
 <?php
 	require('num_sections.php');
 	require('rendering/rendering_engine.php');
-	$page = new Page();
 
-	$page->render('views/header.php');
+    if(!empty($_GET['auth'])) { $lookups['sha1'] = $_GET['auth']; }
+    $page = new Page();
+    $page->render('views/header.php', $lookups);
 
 	$next_page = "anti_inflammatories.php";
+	$previous_page = "diabetes.php";
 
 	$lookups = array(	'question' => '3) Do you take blood pressure medicine?',
 				'image_1' => 'pills_blood_pressure.png', 'height_1' => 200, 'width_1' => 598,
@@ -15,10 +17,9 @@
 				'next_page_yes' => $next_page,
 				'next_page_no' => $next_page,
 				'section_name' => "Managing your medication routine (Step 2 of $num_sections)",
-				'previous_page' => 'diabetes.php');
+				'previous_page' => $previous_page);
 
-	$page->render('views/question_answer.php', $lookups);
-
-	require('logging/audit.php');
-	if(!empty($_GET['auth'])) { log_access($_GET['auth'], basename( __FILE__)); }
+    require('logging/audit.php');
+    if(!empty($_GET['auth'])) { $lookups = modulate_question_links(basename( __FILE__), $lookups, $_GET['auth']); }
+    $page->render('views/question_answer.php', $lookups);
 ?>

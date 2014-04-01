@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <SQLContainer>
     <SQLTable>
+        <name><![CDATA[patient_notification.Consent]]></name>
+        <schema><![CDATA[patient_notification]]></schema>
+        <tableType><![CDATA[InnoDB]]></tableType>
+        <location>
+            <x>47.00</x>
+            <y>146.00</y>
+        </location>
+        <size>
+            <width>244.00</width>
+            <height>80.00</height>
+        </size>
+        <zorder>3</zorder>
+        <SQLField>
+            <name><![CDATA[SHA1]]></name>
+            <type><![CDATA[VARCHAR(40)]]></type>
+            <referencesField>SHA1</referencesField>
+            <referencesTable>patient_notification.Patient</referencesTable>
+            <referencesField><![CDATA[SHA1]]></referencesField>
+            <referencesTable><![CDATA[patient_notification.Patient]]></referencesTable>
+            <sourceCardinality>0</sourceCardinality>
+            <destinationCardinality>0</destinationCardinality>
+            <referencesFieldUID><![CDATA[D0EED84E-1363-495A-9558-F57EA1F31CAA]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[D58163D7-22DF-4356-87C3-FD3E43A0F786]]></referencesTableUID>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[662D2D09-CA47-481A-BABF-0D4BE704539B]]></uid>
+            <unique><![CDATA[1]]></unique>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[initials]]></name>
+            <type><![CDATA[VARCHAR(32)]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[9B0C503F-F393-43F3-B45E-ED3DBBEB64E8]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[consent_entryDate]]></name>
+            <type><![CDATA[TIMESTAMP]]></type>
+            <defaultValue><![CDATA[NOW()]]></defaultValue>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[7AA9129C-9C4F-4E87-96C9-C899ECF49C13]]></uid>
+        </SQLField>
+        <labelWindowIndex><![CDATA[1]]></labelWindowIndex>
+        <temporaryOriginalName><![CDATA[Table3]]></temporaryOriginalName>
+        <uid><![CDATA[217C8F9C-E6EB-48C8-9454-00E1F7215905]]></uid>
+    </SQLTable>
+    <SQLTable>
         <name><![CDATA[patient_notification.Traffic]]></name>
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>
-            <x>404.00</x>
+            <x>680.00</x>
             <y>146.00</y>
         </location>
         <size>
@@ -40,7 +85,8 @@
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[449BD72B-C7D6-4959-9C06-BC1F710C2A98]]></uid>
         </SQLField>
-        <labelWindowIndex><![CDATA[1]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[3]]></labelWindowIndex>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[43C2C157-01AA-4A44-89E3-AA18BF7FEF3C]]></uid>
     </SQLTable>
     <SQLTable>
@@ -48,7 +94,7 @@
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>
-            <x>86.00</x>
+            <x>350.00</x>
             <y>106.00</y>
         </location>
         <size>
@@ -85,8 +131,9 @@
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[C084F1BF-79B9-45E9-B91F-671F1E7A3F3D]]></uid>
         </SQLField>
-        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[2]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Table4]]></temporaryOriginalName>
+        <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[D58163D7-22DF-4356-87C3-FD3E43A0F786]]></uid>
     </SQLTable>
     <SQLComment>
@@ -95,16 +142,17 @@
 email: emartin@sfu.ca
 SHA1: 9936c4d3cbebd41d746a66802ad9467ab248d37f]]></comment>
         <location>
-            <x>155.00</x>
-            <y>316.00</y>
+            <x>246.00</x>
+            <y>279.00</y>
         </location>
         <size>
-            <width>579.00</width>
-            <height>144.00</height>
+            <width>482.00</width>
+            <height>76.00</height>
         </size>
         <zorder>2</zorder>
         <commentTitle><![CDATA[Test data]]></commentTitle>
         <labelColor><![CDATA[{0.999996,1,1,1}]]></labelColor>
+        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Comment1]]></temporaryOriginalName>
         <uid><![CDATA[F43016F8-9B06-4CAB-8962-6F8B5D1604A7]]></uid>
     </SQLComment>
@@ -273,11 +321,11 @@ mZkLTlNQYXBlck5hbWWGkoSZmQluYS1sZXR0ZXKGhoY=
         <snapToGrid><![CDATA[0]]></snapToGrid>
         <SourceSidebarWidth><![CDATA[276.000000]]></SourceSidebarWidth>
         <uid><![CDATA[5201982C-CCEE-4C91-A098-99DE1B89F7C6]]></uid>
-        <windowHeight><![CDATA[634.000000]]></windowHeight>
-        <windowLocationX><![CDATA[334.000000]]></windowLocationX>
-        <windowLocationY><![CDATA[403.000000]]></windowLocationY>
-        <windowScrollOrigin><![CDATA[{0, 0}]]></windowScrollOrigin>
-        <windowWidth><![CDATA[1118.000000]]></windowWidth>
+        <windowHeight><![CDATA[755.000000]]></windowHeight>
+        <windowLocationX><![CDATA[192.000000]]></windowLocationX>
+        <windowLocationY><![CDATA[269.000000]]></windowLocationY>
+        <windowScrollOrigin><![CDATA[{0, 12}]]></windowScrollOrigin>
+        <windowWidth><![CDATA[1349.000000]]></windowWidth>
     </SQLDocumentInfo>
     <AllowsIndexRenamingOnInsert><![CDATA[1]]></AllowsIndexRenamingOnInsert>
     <containerName><![CDATA[model controller orginal container]]></containerName>
