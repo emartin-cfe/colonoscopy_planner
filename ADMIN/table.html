@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/table.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+</head>
+
+<body>
+
+<div class="tableContainer">
+	<table id='hor-minimalist-b'>
+
+		<thead>
+			<tr>
+				<th scope='col' class='topic'>Patient ID</th>
+				<th scope='col'>Patient Email</th>
+				<th scope='col'>Appointment time</th>
+				<th scope='col'>Bowel prep</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>patient_5</td>
+				<td>patient_id@email.com</td>
+				<td>July 25 2014 11:00</td>
+				<td>Miraviroc - split</td>
+			</tr>
+			<tr>
+				<td>patient_4</td>
+				<td>another_email@hotmail.com</td>
+				<td>July 16 2014 12:00</td>
+				<td>Moviprep - single</td>
+			</tr>
+			<tr>
+				<td>patient_3</td>
+				<td>foo@foo.com</td>
+				<td>May 14 2014 10:30</td>
+				<td>Moviprep - single</td>
+			</tr>
+			<tr class="done_appointment">
+				<td>patient_2</td>
+				<td>lol@hehehe.com</td>
+				<td>Jan 10 2014 14:20</td>
+				<td>Moviprep - split</td>
+			</tr>
+			<tr class="done_appointment">
+				<td>patient_1</td>
+				<td>another@test.com</td>
+				<td>Dec 26 2013 6:20</td>
+				<td>Moviprep - split</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="buttons">
+	<button type="submit" class="positive" onclick="foo()"> <img src="images/addNew.png"/> New patient</button>
+	<button type="submit" class="positive" onclick="logout()"> <img src="images/logout.png"/> Logout</button>
+</div>
+
+</body>
+
+</html>
