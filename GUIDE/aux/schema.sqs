@@ -5,14 +5,14 @@
         <comment><![CDATA[test_clinic
 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8 ("password")]]></comment>
         <location>
-            <x>319.00</x>
-            <y>38.00</y>
+            <x>681.00</x>
+            <y>146.00</y>
         </location>
         <size>
             <width>362.00</width>
             <height>63.00</height>
         </size>
-        <zorder>10</zorder>
+        <zorder>7</zorder>
         <commentTitle><![CDATA[Clinic test data]]></commentTitle>
         <hidden><![CDATA[1]]></hidden>
         <labelWindowIndex><![CDATA[7]]></labelWindowIndex>
@@ -24,8 +24,8 @@
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>
-            <x>49.00</x>
-            <y>250.00</y>
+            <x>61.00</x>
+            <y>292.00</y>
         </location>
         <size>
             <width>234.00</width>
@@ -70,8 +70,8 @@
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>
-            <x>663.00</x>
-            <y>341.00</y>
+            <x>8.00</x>
+            <y>117.00</y>
         </location>
         <size>
             <width>377.00</width>
@@ -136,8 +136,8 @@
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>
-            <x>49.00</x>
-            <y>348.00</y>
+            <x>62.00</x>
+            <y>399.00</y>
         </location>
         <size>
             <width>234.00</width>
@@ -181,14 +181,14 @@
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>
-            <x>30.00</x>
-            <y>120.00</y>
+            <x>799.00</x>
+            <y>252.00</y>
         </location>
         <size>
             <width>226.00</width>
             <height>100.00</height>
         </size>
-        <zorder>8</zorder>
+        <zorder>6</zorder>
         <SQLField>
             <name><![CDATA[clinic_id]]></name>
             <type><![CDATA[INTEGER]]></type>
@@ -223,24 +223,6 @@
         <uid><![CDATA[4526ED0A-AE8D-429C-BC1F-DED002EC9BB4]]></uid>
     </SQLTable>
     <SQLComment>
-        <name><![CDATA[Comment5]]></name>
-        <comment><![CDATA[Use session tracking for logins]]></comment>
-        <location>
-            <x>24.00</x>
-            <y>61.00</y>
-        </location>
-        <size>
-            <width>228.00</width>
-            <height>49.00</height>
-        </size>
-        <zorder>9</zorder>
-        <commentTitle><![CDATA[Notes on clinics]]></commentTitle>
-        <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[4]]></labelWindowIndex>
-        <temporaryOriginalName><![CDATA[Comment5]]></temporaryOriginalName>
-        <uid><![CDATA[788207B5-8288-4767-B7DC-5211A7E2E808]]></uid>
-    </SQLComment>
-    <SQLComment>
         <name><![CDATA[Comment3]]></name>
         <comment><![CDATA[Doctor specifies
 
@@ -248,8 +230,8 @@ patient_id + email (FIXED)
 date of procedure
 bowel prep + split/non-split]]></comment>
         <location>
-            <x>745.00</x>
-            <y>71.00</y>
+            <x>826.00</x>
+            <y>378.00</y>
         </location>
         <size>
             <width>182.00</width>
@@ -263,90 +245,16 @@ bowel prep + split/non-split]]></comment>
         <uid><![CDATA[7C856328-5E8A-42EC-B24C-6E96CFF1D275]]></uid>
     </SQLComment>
     <SQLTable>
-        <name><![CDATA[patient_notification.Clinic_Assertions]]></name>
-        <schema><![CDATA[patient_notification]]></schema>
-        <tableType><![CDATA[InnoDB]]></tableType>
-        <location>
-            <x>667.00</x>
-            <y>188.00</y>
-        </location>
-        <size>
-            <width>343.00</width>
-            <height>120.00</height>
-        </size>
-        <zorder>6</zorder>
-        <SQLField>
-            <name><![CDATA[patient_id]]></name>
-            <type><![CDATA[VARCHAR(64)]]></type>
-            <referencesField>patient_id</referencesField>
-            <referencesTable>patient_notification.Patient</referencesTable>
-            <referencesField><![CDATA[patient_id]]></referencesField>
-            <referencesTable><![CDATA[patient_notification.Patient]]></referencesTable>
-            <sourceCardinality>0</sourceCardinality>
-            <destinationCardinality>0</destinationCardinality>
-            <referencesFieldUID><![CDATA[B0DC5FA9-2D65-4A4F-962E-70565147F10D]]></referencesFieldUID>
-            <referencesTableUID><![CDATA[D58163D7-22DF-4356-87C3-FD3E43A0F786]]></referencesTableUID>
-            <uid><![CDATA[936CC32F-33AF-4A96-9B24-9E1B53A93C52]]></uid>
-            <unique><![CDATA[1]]></unique>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[time_of_procedure]]></name>
-            <type><![CDATA[TIMESTAMP]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[3C2946A7-C87B-4C0A-985B-2ED224A3946F]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[bowel_prep]]></name>
-            <type><![CDATA[VARCHAR(255)]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[D853533E-299A-4200-92CD-74FE3A42690C]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[split_or_not_split]]></name>
-            <type><![CDATA[VARCHAR(32)]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[933BEBFF-7D7A-4A83-829D-599DEBB42000]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[clinic_assertionsEntryDate]]></name>
-            <type><![CDATA[TIMESTAMP]]></type>
-            <defaultValue><![CDATA[NOW()]]></defaultValue>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[DAB6A136-394F-4098-BAB0-D415DC056714]]></uid>
-        </SQLField>
-        <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[2]]></labelWindowIndex>
-        <uid><![CDATA[8F4BAAD6-0A57-4838-8728-8A0A6669C00E]]></uid>
-    </SQLTable>
-    <SQLComment>
-        <name><![CDATA[Comment4]]></name>
-        <comment><![CDATA[Patient Assertions is not added yet.]]></comment>
-        <location>
-            <x>704.00</x>
-            <y>477.00</y>
-        </location>
-        <size>
-            <width>297.00</width>
-            <height>58.00</height>
-        </size>
-        <zorder>7</zorder>
-        <commentTitle><![CDATA[NOTES]]></commentTitle>
-        <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[1]]></labelWindowIndex>
-        <temporaryOriginalName><![CDATA[Comment4]]></temporaryOriginalName>
-        <uid><![CDATA[8FFB1080-607C-4311-8FDA-9E36CBCDBCBE]]></uid>
-    </SQLComment>
-    <SQLTable>
         <name><![CDATA[patient_notification.Patient]]></name>
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>
-            <x>355.00</x>
+            <x>479.00</x>
             <y>232.00</y>
         </location>
         <size>
             <width>251.00</width>
-            <height>120.00</height>
+            <height>180.00</height>
         </size>
         <zorder>1</zorder>
         <SQLField>
@@ -372,7 +280,7 @@ bowel prep + split/non-split]]></comment>
             <uid><![CDATA[587A5945-B810-42A0-9F1C-3C15E33416F8]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[email]]></name>
+            <name><![CDATA[patient_email]]></name>
             <type><![CDATA[VARCHAR(255)]]></type>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[405DD543-2242-4000-918B-5262F852AF56]]></uid>
@@ -384,6 +292,27 @@ bowel prep + split/non-split]]></comment>
             <forcedUnique><![CDATA[1]]></forcedUnique>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[D0EED84E-1363-495A-9558-F57EA1F31CAA]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[appointment_time]]></name>
+            <type><![CDATA[TIMESTAMP]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <temporaryOriginalName><![CDATA[id]]></temporaryOriginalName>
+            <uid><![CDATA[04005D08-047B-4769-AB53-73EE1EE48427]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[bowel_prep]]></name>
+            <type><![CDATA[VARCHAR(255)]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <temporaryOriginalName><![CDATA[id_1]]></temporaryOriginalName>
+            <uid><![CDATA[F9A451BC-7536-4F3D-81DC-343103665DB4]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[single_or_split]]></name>
+            <type><![CDATA[VARCHAR(255)]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <temporaryOriginalName><![CDATA[id_2]]></temporaryOriginalName>
+            <uid><![CDATA[96ACFCF7-FE35-4F7E-B119-E88CE6E30832]]></uid>
         </SQLField>
         <SQLField>
             <name><![CDATA[patient_entryDate]]></name>
@@ -404,8 +333,8 @@ bowel prep + split/non-split]]></comment>
 email: emartin@sfu.ca
 SHA1: 9936c4d3cbebd41d746a66802ad9467ab248d37f]]></comment>
         <location>
-            <x>12.00</x>
-            <y>445.00</y>
+            <x>14.00</x>
+            <y>500.00</y>
         </location>
         <size>
             <width>339.00</width>
@@ -585,8 +514,8 @@ mZkLTlNQYXBlck5hbWWGkoSZmQluYS1sZXR0ZXKGhoY=
         <SourceSidebarWidth><![CDATA[276.000000]]></SourceSidebarWidth>
         <uid><![CDATA[5201982C-CCEE-4C91-A098-99DE1B89F7C6]]></uid>
         <windowHeight><![CDATA[867.000000]]></windowHeight>
-        <windowLocationX><![CDATA[56.000000]]></windowLocationX>
-        <windowLocationY><![CDATA[130.000000]]></windowLocationY>
+        <windowLocationX><![CDATA[158.000000]]></windowLocationX>
+        <windowLocationY><![CDATA[175.000000]]></windowLocationY>
         <windowScrollOrigin><![CDATA[{0, 0}]]></windowScrollOrigin>
         <windowWidth><![CDATA[1349.000000]]></windowWidth>
     </SQLDocumentInfo>
