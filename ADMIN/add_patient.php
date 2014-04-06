@@ -46,14 +46,16 @@
 
 
 			<label>Bowel prep</label>
-			<select name="bowel_prep" id="bowel_prep">
-				<option value="Moviprep" selected>Moviprep</option>
+			<select name="bowel_prep" id="bowel_prep" required>
+				<option value="">Please select</option>
+				<option value="Moviprep">Moviprep</option>
 				<option value="PEG">PEG</option>
 			</select>
 
 			<label>Split prep dose?</label>
-			<select name="split_prep" id="split_prep">
-				<option value="split" selected>Split prep</option>
+			<select name="split_prep" id="split_prep" required>
+				<option value="">Please select</option>
+				<option value="split">Split prep</option>
 				<option value="single">Single prep</option>
 			</select>
 
