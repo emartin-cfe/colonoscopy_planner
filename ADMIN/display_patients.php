@@ -36,10 +36,10 @@
 
 	$clinic_id = $_SESSION['clinic_id'];
 
-	$query = 	"SELECT patient_id, patient_email, appointment_time, bowel_prep, single_or_split " .
+	$query = 	"SELECT patient_id, patient_email, appointment_time, bowel_prep, single_or_split, patient_status, consent_initials " .
 				"FROM Clinics NATURAL JOIN Patient " .
-				"WHERE clinic_id='$clinic_id' AND patient_status='active'" .
-				"ORDER BY appointment_time DESC";
+				"WHERE clinic_id='$clinic_id' " .
+				"ORDER BY patient_status, appointment_time DESC";
 
 	$result = $mysqli->query($query);
 
@@ -47,15 +47,22 @@
 
 		$patient_id = $row['patient_id'];			$patient_email = $row['patient_email'];
 		$appointment = $row['appointment_time'];	$bowel_prep = $row['bowel_prep'];
-		$single_or_split = $row['single_or_split'];
+		$single_or_split = $row['single_or_split'];	$patient_status = $row['patient_status'];
+		$consent_initials = $row['consent_initials'];
 
 		# 2014-04-30 15:15:00
-
 		$appointment = date("M d Y - H:i", strtotime($appointment));
 
-		# Regarding status:
-		# 	Has the patient consented?
-		# 	Has the patient reached the checklist?
+		# FIXME: THIS IS CLEARLY INEFFICIENT IF WE HAVE THOUSANDS OF ENTRIES
+		if ($patient_status == 'active') {
+				if ($consent_initials != "") {
+					$patient_status = 'consented';
+				}
+				else {
+					$patient_status = '';
+					}
+			}
+
 
 	    print 	"\n\n\t\t\t<tr onclick=\"window.location.href = 'update_patient.php?patient_id=$patient_id';\">" .
 				"\n\t\t\t\t<td>$patient_id</td>" .
@@ -63,7 +70,7 @@
 				"\n\t\t\t\t<td>$appointment</td>" .
 				"\n\t\t\t\t<td>$bowel_prep</td>" .
 				"\n\t\t\t\t<td>$single_or_split</td>" .
-				"\n\t\t\t\t<td></td>" .
+				"\n\t\t\t\t<td>$patient_status</td>" .
 				"\n\t\t\t</tr>";
 	    }   
 

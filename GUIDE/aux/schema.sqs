@@ -12,59 +12,13 @@
             <width>362.00</width>
             <height>63.00</height>
         </size>
-        <zorder>7</zorder>
+        <zorder>6</zorder>
         <commentTitle><![CDATA[Clinic test data]]></commentTitle>
         <hidden><![CDATA[1]]></hidden>
         <labelWindowIndex><![CDATA[4]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Comment6]]></temporaryOriginalName>
         <uid><![CDATA[0031CEDB-B1C4-4298-AD89-105691790C65]]></uid>
     </SQLComment>
-    <SQLTable>
-        <name><![CDATA[patient_notification.Consent]]></name>
-        <schema><![CDATA[patient_notification]]></schema>
-        <tableType><![CDATA[InnoDB]]></tableType>
-        <location>
-            <x>61.00</x>
-            <y>292.00</y>
-        </location>
-        <size>
-            <width>234.00</width>
-            <height>80.00</height>
-        </size>
-        <zorder>3</zorder>
-        <SQLField>
-            <name><![CDATA[SHA1]]></name>
-            <type><![CDATA[VARCHAR(40)]]></type>
-            <referencesField>SHA1</referencesField>
-            <referencesTable>patient_notification.Patient</referencesTable>
-            <referencesField><![CDATA[SHA1]]></referencesField>
-            <referencesTable><![CDATA[patient_notification.Patient]]></referencesTable>
-            <sourceCardinality>0</sourceCardinality>
-            <destinationCardinality>0</destinationCardinality>
-            <referencesFieldUID><![CDATA[D0EED84E-1363-495A-9558-F57EA1F31CAA]]></referencesFieldUID>
-            <referencesTableUID><![CDATA[D58163D7-22DF-4356-87C3-FD3E43A0F786]]></referencesTableUID>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[662D2D09-CA47-481A-BABF-0D4BE704539B]]></uid>
-            <unique><![CDATA[1]]></unique>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[initials]]></name>
-            <type><![CDATA[VARCHAR(32)]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[9B0C503F-F393-43F3-B45E-ED3DBBEB64E8]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[consent_entryDate]]></name>
-            <type><![CDATA[TIMESTAMP]]></type>
-            <defaultValue><![CDATA[NOW()]]></defaultValue>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[7AA9129C-9C4F-4E87-96C9-C899ECF49C13]]></uid>
-        </SQLField>
-        <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[5]]></labelWindowIndex>
-        <temporaryOriginalName><![CDATA[Table3]]></temporaryOriginalName>
-        <uid><![CDATA[217C8F9C-E6EB-48C8-9454-00E1F7215905]]></uid>
-    </SQLTable>
     <SQLTable>
         <name><![CDATA[patient_notification.Patient_Assertions]]></name>
         <schema><![CDATA[patient_notification]]></schema>
@@ -77,7 +31,7 @@
             <width>377.00</width>
             <height>120.00</height>
         </size>
-        <zorder>4</zorder>
+        <zorder>3</zorder>
         <SQLField>
             <name><![CDATA[patient_id]]></name>
             <type><![CDATA[VARCHAR(64)]]></type>
@@ -188,7 +142,7 @@
             <width>226.00</width>
             <height>100.00</height>
         </size>
-        <zorder>6</zorder>
+        <zorder>5</zorder>
         <SQLField>
             <name><![CDATA[clinic_id]]></name>
             <type><![CDATA[INTEGER]]></type>
@@ -237,7 +191,7 @@ bowel prep + split/non-split]]></comment>
             <width>182.00</width>
             <height>100.00</height>
         </size>
-        <zorder>5</zorder>
+        <zorder>4</zorder>
         <commentTitle><![CDATA[Admin Panel]]></commentTitle>
         <hidden><![CDATA[1]]></hidden>
         <labelWindowIndex><![CDATA[1]]></labelWindowIndex>
@@ -254,7 +208,7 @@ bowel prep + split/non-split]]></comment>
         </location>
         <size>
             <width>285.00</width>
-            <height>200.00</height>
+            <height>240.00</height>
         </size>
         <zorder>1</zorder>
         <SQLField>
@@ -320,6 +274,17 @@ bowel prep + split/non-split]]></comment>
             <defaultValue><![CDATA[active]]></defaultValue>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[307AB189-77FC-46DA-BF1C-6E0E4AAC0B59]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[consent_initials]]></name>
+            <type><![CDATA[VARCHAR(255)]]></type>
+            <uid><![CDATA[0B757BE0-37FC-468C-B08F-D1341243534F]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[consent_date]]></name>
+            <type><![CDATA[TIMESTAMP]]></type>
+            <notNull><![CDATA[0]]></notNull>
+            <uid><![CDATA[C26E160E-3CEE-4D7F-8A59-8997F70EBC1D]]></uid>
         </SQLField>
         <SQLField>
             <name><![CDATA[patient_entryDate]]></name>
