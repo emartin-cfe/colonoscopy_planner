@@ -48,11 +48,11 @@
 			<input type="text" name="patient_id" id="patient_id" value = "<?=$patient_id?>" readonly/>
 
 			<label>Patient email</label>
-			<input type="text" name="patient_email" id="patient_email" value="<?=$patient_email?>"/>	
+			<input type="email" name="patient_email" id="patient_email" value="<?=$patient_email?>" required/>	
 
 			<label>Appointment date</label>
 			<div id="datetimepicker" class="input-append date">
-				<input type="text" name="appointment_date" id="appointment_date" value="<?=$appointment_time?>"></input>
+				<input type="datetime" name="appointment_date" id="appointment_date" value="<?=$appointment_time?>" required></input>
 				<span class="add-on" id="custom_date_selector"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
 			</div>
 			

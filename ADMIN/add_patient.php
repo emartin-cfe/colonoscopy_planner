@@ -6,6 +6,8 @@
 <html>
 
 <head>
+	<meta charset="utf-8">
+
 	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" type="text/css" href="css/login_page.css">
@@ -18,14 +20,14 @@
 			<p>Patient will be emailed a link to the web guide.</p>
 
 			<label>Patient id</label>
-			<input type="text" name="patient_id" id="patient_id"/>
+			<input type="text" name="patient_id" id="patient_id" required/>
 
 			<label>Patient email</label>
-			<input type="text" name="patient_email" id="patient_email"/>	
+			<input type="email" name="patient_email" id="patient_email" required/>	
 
 			<label>Appointment date</label>
 			<div id="datetimepicker" class="input-append date">
-				<input type="text" name="appointment_date" id="appointment_date"></input>
+				<input type="datetime" name="appointment_date" id="appointment_date" required></input>
 				<span class="add-on" id="custom_date_selector"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
 			</div>
 			
@@ -55,7 +57,7 @@
 				<option value="single">Single prep</option>
 			</select>
 
-			<button type="submit">Add patient</button>
+			<button type="submit" onclick="return validate_new_patient();">Add patient</button>
 			<button type="input" onclick="window.location='display_patients.php'">Cancel</button>
 
 			<div class="spacer"></div>
