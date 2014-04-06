@@ -15,10 +15,80 @@
         <zorder>7</zorder>
         <commentTitle><![CDATA[Clinic test data]]></commentTitle>
         <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[7]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[4]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Comment6]]></temporaryOriginalName>
         <uid><![CDATA[0031CEDB-B1C4-4298-AD89-105691790C65]]></uid>
     </SQLComment>
+    <SQLTable>
+        <name><![CDATA[patient_notification.Deleted_Patient]]></name>
+        <schema><![CDATA[patient_notification]]></schema>
+        <location>
+            <x>440.00</x>
+            <y>460.00</y>
+        </location>
+        <size>
+            <width>345.00</width>
+            <height>200.00</height>
+        </size>
+        <zorder>8</zorder>
+        <SQLField>
+            <name><![CDATA[patient_id]]></name>
+            <type><![CDATA[VARCHAR(64)]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[4C304F01-60F7-43A8-BBFB-8C46D4B09409]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[clinic_id]]></name>
+            <type><![CDATA[INTEGER]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[6208FEDE-F58F-4F2A-9A03-05A7ACEF2CEE]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[patient_email]]></name>
+            <type><![CDATA[VARCHAR(255)]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[AE499DEE-DB9F-450C-907F-644C714D0F49]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[SHA1]]></name>
+            <type><![CDATA[VARCHAR(40)]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[0984CD03-F264-4011-9640-7913B9D843F2]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[appointment_time]]></name>
+            <type><![CDATA[TIMESTAMP]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[63151ED6-4A1B-4A5E-A711-4080F3752253]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[bowel_prep]]></name>
+            <type><![CDATA[VARCHAR(255)]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[3B61D5DA-2E61-4D67-9D38-E3A5448E3516]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[single_or_split]]></name>
+            <type><![CDATA[VARCHAR(255)]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[69085BA1-9BE8-46D3-8086-8DA82188A616]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[patient_entryDate]]></name>
+            <type><![CDATA[TIMESTAMP]]></type>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[437DB121-5EEC-4053-BC24-BE22308B9164]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[deleted_patient_entryDate]]></name>
+            <type><![CDATA[TIMESTAMP]]></type>
+            <defaultValue><![CDATA[NOW()]]></defaultValue>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[E4FF7339-4068-417C-B958-90AEC689DC1C]]></uid>
+        </SQLField>
+        <temporaryOriginalName><![CDATA[Table11]]></temporaryOriginalName>
+        <uid><![CDATA[0AE74263-4C41-43CF-B546-9881369D4517]]></uid>
+    </SQLTable>
     <SQLTable>
         <name><![CDATA[patient_notification.Consent]]></name>
         <schema><![CDATA[patient_notification]]></schema>
@@ -61,7 +131,7 @@
             <uid><![CDATA[7AA9129C-9C4F-4E87-96C9-C899ECF49C13]]></uid>
         </SQLField>
         <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[8]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[5]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Table3]]></temporaryOriginalName>
         <uid><![CDATA[217C8F9C-E6EB-48C8-9454-00E1F7215905]]></uid>
     </SQLTable>
@@ -127,7 +197,7 @@
             <uid><![CDATA[5618007C-E6D3-4C54-9A3E-D286915CE635]]></uid>
         </SQLIndex>
         <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[6]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[3]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Table5]]></temporaryOriginalName>
         <uid><![CDATA[3051FEEB-F4F4-4B11-A6E0-F620F8625620]]></uid>
     </SQLTable>
@@ -172,7 +242,7 @@
             <uid><![CDATA[449BD72B-C7D6-4959-9C06-BC1F710C2A98]]></uid>
         </SQLField>
         <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[10]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[7]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[43C2C157-01AA-4A44-89E3-AA18BF7FEF3C]]></uid>
     </SQLTable>
@@ -218,7 +288,7 @@
             <uid><![CDATA[56F11EAD-59CD-4666-95DC-66F87EEBFAEE]]></uid>
         </SQLField>
         <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[5]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[2]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Table7]]></temporaryOriginalName>
         <uid><![CDATA[4526ED0A-AE8D-429C-BC1F-DED002EC9BB4]]></uid>
     </SQLTable>
@@ -240,7 +310,7 @@ bowel prep + split/non-split]]></comment>
         <zorder>5</zorder>
         <commentTitle><![CDATA[Admin Panel]]></commentTitle>
         <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[3]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[1]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Comment3]]></temporaryOriginalName>
         <uid><![CDATA[7C856328-5E8A-42EC-B24C-6E96CFF1D275]]></uid>
     </SQLComment>
@@ -253,7 +323,7 @@ bowel prep + split/non-split]]></comment>
             <y>232.00</y>
         </location>
         <size>
-            <width>251.00</width>
+            <width>253.00</width>
             <height>180.00</height>
         </size>
         <zorder>1</zorder>
@@ -322,7 +392,7 @@ bowel prep + split/non-split]]></comment>
             <uid><![CDATA[C084F1BF-79B9-45E9-B91F-671F1E7A3F3D]]></uid>
         </SQLField>
         <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[9]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[6]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Table4]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[D58163D7-22DF-4356-87C3-FD3E43A0F786]]></uid>
@@ -513,11 +583,11 @@ mZkLTlNQYXBlck5hbWWGkoSZmQluYS1sZXR0ZXKGhoY=
         <snapToGrid><![CDATA[0]]></snapToGrid>
         <SourceSidebarWidth><![CDATA[276.000000]]></SourceSidebarWidth>
         <uid><![CDATA[5201982C-CCEE-4C91-A098-99DE1B89F7C6]]></uid>
-        <windowHeight><![CDATA[867.000000]]></windowHeight>
-        <windowLocationX><![CDATA[158.000000]]></windowLocationX>
-        <windowLocationY><![CDATA[175.000000]]></windowLocationY>
+        <windowHeight><![CDATA[920.000000]]></windowHeight>
+        <windowLocationX><![CDATA[346.000000]]></windowLocationX>
+        <windowLocationY><![CDATA[138.000000]]></windowLocationY>
         <windowScrollOrigin><![CDATA[{0, 0}]]></windowScrollOrigin>
-        <windowWidth><![CDATA[1349.000000]]></windowWidth>
+        <windowWidth><![CDATA[1500.000000]]></windowWidth>
     </SQLDocumentInfo>
     <AllowsIndexRenamingOnInsert><![CDATA[1]]></AllowsIndexRenamingOnInsert>
     <containerName><![CDATA[model controller orginal container]]></containerName>
