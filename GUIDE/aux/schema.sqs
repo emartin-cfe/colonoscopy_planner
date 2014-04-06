@@ -20,76 +20,6 @@
         <uid><![CDATA[0031CEDB-B1C4-4298-AD89-105691790C65]]></uid>
     </SQLComment>
     <SQLTable>
-        <name><![CDATA[patient_notification.Deleted_Patient]]></name>
-        <schema><![CDATA[patient_notification]]></schema>
-        <location>
-            <x>440.00</x>
-            <y>460.00</y>
-        </location>
-        <size>
-            <width>345.00</width>
-            <height>200.00</height>
-        </size>
-        <zorder>8</zorder>
-        <SQLField>
-            <name><![CDATA[patient_id]]></name>
-            <type><![CDATA[VARCHAR(64)]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[4C304F01-60F7-43A8-BBFB-8C46D4B09409]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[clinic_id]]></name>
-            <type><![CDATA[INTEGER]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[6208FEDE-F58F-4F2A-9A03-05A7ACEF2CEE]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[patient_email]]></name>
-            <type><![CDATA[VARCHAR(255)]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[AE499DEE-DB9F-450C-907F-644C714D0F49]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[SHA1]]></name>
-            <type><![CDATA[VARCHAR(40)]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[0984CD03-F264-4011-9640-7913B9D843F2]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[appointment_time]]></name>
-            <type><![CDATA[TIMESTAMP]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[63151ED6-4A1B-4A5E-A711-4080F3752253]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[bowel_prep]]></name>
-            <type><![CDATA[VARCHAR(255)]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[3B61D5DA-2E61-4D67-9D38-E3A5448E3516]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[single_or_split]]></name>
-            <type><![CDATA[VARCHAR(255)]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[69085BA1-9BE8-46D3-8086-8DA82188A616]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[patient_entryDate]]></name>
-            <type><![CDATA[TIMESTAMP]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[437DB121-5EEC-4053-BC24-BE22308B9164]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[deleted_patient_entryDate]]></name>
-            <type><![CDATA[TIMESTAMP]]></type>
-            <defaultValue><![CDATA[NOW()]]></defaultValue>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[E4FF7339-4068-417C-B958-90AEC689DC1C]]></uid>
-        </SQLField>
-        <temporaryOriginalName><![CDATA[Table11]]></temporaryOriginalName>
-        <uid><![CDATA[0AE74263-4C41-43CF-B546-9881369D4517]]></uid>
-    </SQLTable>
-    <SQLTable>
         <name><![CDATA[patient_notification.Consent]]></name>
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
@@ -323,8 +253,8 @@ bowel prep + split/non-split]]></comment>
             <y>232.00</y>
         </location>
         <size>
-            <width>253.00</width>
-            <height>180.00</height>
+            <width>285.00</width>
+            <height>200.00</height>
         </size>
         <zorder>1</zorder>
         <SQLField>
@@ -354,7 +284,7 @@ bowel prep + split/non-split]]></comment>
             <type><![CDATA[VARCHAR(255)]]></type>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[405DD543-2242-4000-918B-5262F852AF56]]></uid>
-            <unique><![CDATA[1]]></unique>
+            <unique><![CDATA[0]]></unique>
         </SQLField>
         <SQLField>
             <name><![CDATA[SHA1]]></name>
@@ -383,6 +313,13 @@ bowel prep + split/non-split]]></comment>
             <notNull><![CDATA[1]]></notNull>
             <temporaryOriginalName><![CDATA[id_2]]></temporaryOriginalName>
             <uid><![CDATA[96ACFCF7-FE35-4F7E-B119-E88CE6E30832]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[patient_status]]></name>
+            <type><![CDATA[ENUM('active','inactive')]]></type>
+            <defaultValue><![CDATA[active]]></defaultValue>
+            <notNull><![CDATA[1]]></notNull>
+            <uid><![CDATA[307AB189-77FC-46DA-BF1C-6E0E4AAC0B59]]></uid>
         </SQLField>
         <SQLField>
             <name><![CDATA[patient_entryDate]]></name>

@@ -42,7 +42,7 @@
 	<div id="stylized" class="myform">
 		<form id="form" name="form" method="post" action="update_patient_2.php">
 			<h1>Patient details</h1>
-			<p>Click <a href='deactivate_patient.php?patient_id=<?=$patient_id?>' onclick='return confirm("Are you SURE you want to DELETE this patient?");'>here</a> to delete this patient</p>
+			<p>Click <a href='deactivate_patient.php?patient_id=<?=$patient_id?>' onclick='return confirm("Deactivate <?=$patient_id?> ?");'>here</a> to deactive this patient</p>
 
 			<label>Patient id</label>
 			<input type="text" name="patient_id" id="patient_id" value = "<?=$patient_id?>" readonly/>

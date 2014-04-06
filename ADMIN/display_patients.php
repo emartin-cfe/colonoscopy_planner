@@ -38,7 +38,7 @@
 
 	$query = 	"SELECT patient_id, patient_email, appointment_time, bowel_prep, single_or_split " .
 				"FROM Clinics NATURAL JOIN Patient " .
-				"WHERE clinic_id='$clinic_id'" .
+				"WHERE clinic_id='$clinic_id' AND patient_status='active'" .
 				"ORDER BY appointment_time DESC";
 
 	$result = $mysqli->query($query);
