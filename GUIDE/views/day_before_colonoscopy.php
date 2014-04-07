@@ -1,11 +1,11 @@
-	<h2>Monday: <span class="red">1 day before</span> your colonoscopy</h2>
+	<h2><?=$appointment_day?>: <span class="red">1 day before</span> your colonoscopy</h2>
 
 	<link rel="stylesheet" type="text/css" href="css/calendar_table.css">
 
     <table id="schedule">
         <thead>
             <tr>
-            <th scope="col" class="time_of_day">Sept 16, 2014</th>
+            <th scope="col" class="time_of_day"><?=$appointment_date?></th>
             <th scope="col" class="what_you_eat">What you eat</th>
             <th scope="col" class="what_you_drink">What you drink</th>
             </tr>

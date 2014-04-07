@@ -1,4 +1,4 @@
-		<h2 class="top">Tuesday instructions: <span class="red">the day of</span> your colonoscopy</h2>
+		<h2 class="top">Instructions for <?=$appointment_date?></h2>
 
 		<h2>What you eat:</h2>
 		<p>You <b>must not</b> eat any <span class="image_popup"><a class="image_popup" href="images/foods_not_ok.png" title="Solid food makes it hard for the GI doctor to see inside.">solid foods</a> prior to your colonoscopy, even if your colonoscopy is scheduled for the afternoon.</p>

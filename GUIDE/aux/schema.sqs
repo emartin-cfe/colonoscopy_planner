@@ -5,8 +5,8 @@
         <comment><![CDATA[test_clinic
 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8 ("password")]]></comment>
         <location>
-            <x>681.00</x>
-            <y>146.00</y>
+            <x>457.00</x>
+            <y>160.00</y>
         </location>
         <size>
             <width>362.00</width>
@@ -24,7 +24,7 @@
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>
-            <x>8.00</x>
+            <x>10.00</x>
             <y>117.00</y>
         </location>
         <size>
@@ -90,8 +90,8 @@
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>
-            <x>62.00</x>
-            <y>399.00</y>
+            <x>154.00</x>
+            <y>292.00</y>
         </location>
         <size>
             <width>234.00</width>
@@ -126,7 +126,7 @@
             <uid><![CDATA[449BD72B-C7D6-4959-9C06-BC1F710C2A98]]></uid>
         </SQLField>
         <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[7]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[6]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[43C2C157-01AA-4A44-89E3-AA18BF7FEF3C]]></uid>
     </SQLTable>
@@ -294,7 +294,7 @@ bowel prep + split/non-split]]></comment>
             <uid><![CDATA[C084F1BF-79B9-45E9-B91F-671F1E7A3F3D]]></uid>
         </SQLField>
         <hidden><![CDATA[1]]></hidden>
-        <labelWindowIndex><![CDATA[6]]></labelWindowIndex>
+        <labelWindowIndex><![CDATA[5]]></labelWindowIndex>
         <temporaryOriginalName><![CDATA[Table4]]></temporaryOriginalName>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[D58163D7-22DF-4356-87C3-FD3E43A0F786]]></uid>
@@ -486,7 +486,7 @@ mZkLTlNQYXBlck5hbWWGkoSZmQluYS1sZXR0ZXKGhoY=
         <SourceSidebarWidth><![CDATA[276.000000]]></SourceSidebarWidth>
         <uid><![CDATA[5201982C-CCEE-4C91-A098-99DE1B89F7C6]]></uid>
         <windowHeight><![CDATA[920.000000]]></windowHeight>
-        <windowLocationX><![CDATA[346.000000]]></windowLocationX>
+        <windowLocationX><![CDATA[370.000000]]></windowLocationX>
         <windowLocationY><![CDATA[138.000000]]></windowLocationY>
         <windowScrollOrigin><![CDATA[{0, 0}]]></windowScrollOrigin>
         <windowWidth><![CDATA[1500.000000]]></windowWidth>
