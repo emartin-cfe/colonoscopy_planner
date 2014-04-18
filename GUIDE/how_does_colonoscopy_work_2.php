@@ -1,8 +1,7 @@
 <?php
- 	require('num_sections.php');
-	require('rendering/rendering_engine.php');
-	require('logging/audit.php');
+	require('dependencies/standard_imports.php');
 
+	$lookups = array();
     if(!empty($_GET['auth'])) { $lookups['sha1'] = $_GET['auth']; }
     $page = new Page();
     $page->render('views/header.php', $lookups);

@@ -34,6 +34,7 @@
 	<div id="footer"><?=htmlspecialchars($section_name); ?></div>
 </div>
 
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="magnific-popup/jquery.magnific-popup.js"></script>
 <script src="magnific-popup/CUSTOM_CODE/my_code.js"></script>
 

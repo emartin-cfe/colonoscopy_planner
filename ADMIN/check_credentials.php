@@ -16,11 +16,10 @@ if ($result->num_rows == 1) {
 	$_SESSION['signed_in'] = 1;
 	$_SESSION['clinic_id'] = $row['clinic_id'];
 	header('Location: display_patients.php');
+	exit;
 	}
 else {
 	header('Location: index.html');
+	exit;
 	}
-
-$result->close();
-$mysqli->close();
 ?>

@@ -1,6 +1,5 @@
 <?php
-	require('num_sections.php');
-	require('rendering/rendering_engine.php');
+	require('dependencies/standard_imports.php');
 
     if(!empty($_GET['auth'])) { $lookups['sha1'] = $_GET['auth']; }
     $page = new Page();
@@ -19,7 +18,6 @@
 				'section_name' => "Managing your medication routine (Step 2 of $num_sections)",
 				'previous_page' => $previous_page);
 
-    require('logging/audit.php');
     if(!empty($_GET['auth'])) { $lookups = modulate_question_links(basename( __FILE__), $lookups, $_GET['auth']); }
 
     $page->render('views/question_answer.php', $lookups);

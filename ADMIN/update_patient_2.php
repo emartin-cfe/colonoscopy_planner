@@ -19,5 +19,6 @@
 	if ($mysqli->connect_errno) { echo "Failed to connect to MySQL: " . $mysqli->connect_error; }
 	$result = $mysqli->query($query);
 
-	header('Location: display_patients.php')
+	header('Location: display_patients.php');
+	exit;
 ?>

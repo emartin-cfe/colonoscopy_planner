@@ -1,5 +1,5 @@
 <?php
-	require('rendering/rendering_engine.php');
+	require('dependencies/standard_imports.php');
 
     if(!empty($_GET['auth'])) { $lookups['sha1'] = $_GET['auth']; }
     $page = new Page();
@@ -8,8 +8,5 @@
 
 	$lookups = array('page_name' => 'Contact Information');
 	$page->render('views/footer_low_profile.php', $lookups);
-
-	require('logging/audit.php');
 	log_access($_GET['auth'], basename( __FILE__));
-
 ?>
