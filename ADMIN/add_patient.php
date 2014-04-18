@@ -8,8 +8,15 @@
 <head>
 	<meta charset="utf-8">
 
-	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+	<!-- cloudflare and bootstrapcdn are content delivery networks and are trusted -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css">
+
+    <script type="text/javascript" src="bootstrap_datetime/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="bootstrap_datetime/bootstrap-datetimepicker.pt-BR.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-datetimepicker.min.css">
+
 	<link rel="stylesheet" type="text/css" href="css/login_page.css">
 </head>
 
@@ -31,10 +38,6 @@
 				<span class="add-on" id="custom_date_selector"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
 			</div>
 			
-			<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
-			<script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="bootstrap_datetime/bootstrap-datetimepicker.js"></script>
-			<script type="text/javascript" src="bootstrap_datetime/bootstrap-datetimepicker.pt-BR.js"></script>
 			<script type="text/javascript">
 				$('#datetimepicker').datetimepicker({
 					format: 'yyyy-MM-dd hh:mm',
@@ -49,7 +52,8 @@
 			<select name="bowel_prep" id="bowel_prep" required>
 				<option value="">Please select</option>
 				<option value="Moviprep">Moviprep</option>
-				<option value="PEG">PEG</option>
+				<option value="BiPeglyte">BiPeglyte</option>
+				<option value="PicoSalax">PicoSalax</option>
 			</select>
 
 			<label>Split prep dose?</label>

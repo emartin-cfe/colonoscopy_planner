@@ -27,7 +27,7 @@
 		log_access($sha1, $page_to_log);
 		$lookups['next_page_yes'] = $lookups['next_page_yes'] . "?auth=$sha1";
 		$lookups['next_page_no'] = $lookups['next_page_no'] . "?auth=$sha1";
-		$lookups['previous_page'] = $lookups['previous_page'] . "auth=$sha1";
+		$lookups['previous_page'] = $lookups['previous_page'] . "?auth=$sha1";
 		return $lookups;
 		} 
 

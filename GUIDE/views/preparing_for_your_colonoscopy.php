@@ -8,7 +8,7 @@
 
 		<br/>
 
-		<p>You need to change your medication routine if you take diabetes medicine, fish oil, or blood thinners.</p>
+		<p>You may need to change your medication routine if you take diabetes medicine, fish oil, or blood thinners.</p>
 
 		<br/>
 

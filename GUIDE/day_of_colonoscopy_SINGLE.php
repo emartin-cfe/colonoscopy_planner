@@ -19,7 +19,7 @@
 
 	$appointment_time = date('g:i A', strtotime($row['appointment_time']));
 	$appointment_day = date('l', strtotime($row['appointment_time']));
-	$appointment_date = date('M d Y', strtotime($row['appointment_time']));
+	$appointment_date = date('M d, Y', strtotime($row['appointment_time']));
 	$lookups = array( 'appointment_day' => $appointment_day, 'appointment_date' => $appointment_date, 'appointment_time' => $appointment_time);
     $page->render('views/' . basename( __FILE__), $lookups);
 

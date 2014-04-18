@@ -5,7 +5,7 @@
 
     if(!empty($_GET['auth'])) { $lookups['sha1'] = $_GET['auth']; }
 	$page = new Page();
-	$page->render('views/header.php', $lookups);
+	$page->render('views/header.php');
 	$page->render('views/' . basename( __FILE__));
 
     $lookups = array(   'section_name' => 'About Your Insides',

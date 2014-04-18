@@ -7,9 +7,9 @@
     $page->render('views/header.php', $lookups);
 
 	$next_page = "preparing_for_your_colonoscopy_2.php";
-	$previous_page = "aspirin.php";
+	$previous_page = "anti_platelets.php";
 
-	$lookups = array(	'question' => '6) Do you take a blood thinner like Coumadin, or warfarin?',
+	$lookups = array(	'question' => '7) Do you take a blood thinner like Coumadin, or warfarin?',
 				'image_1' => 'warfarin_1.png', 'height_1' => 227, 'width_1' => 358,
 				'image_2' => 'warfarin_2.png', 'height_2' => 200, 'width_2' => 358,
 				'notify_type' => 'warning',

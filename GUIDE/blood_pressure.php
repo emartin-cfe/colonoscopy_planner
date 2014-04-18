@@ -13,7 +13,7 @@
 				'image_1' => 'pills_blood_pressure.png', 'height_1' => 200, 'width_1' => 598,
 				'image_2' => 'pills_blood_pressure_yes.png', 'height_2' => 257, 'width_2' => 598,
 				'notify_type' => 'success',
-				'question_warning' => 'Keep taking your medicine. On the day of your test, take your blood pressure medicine two hours before your test.',
+				'question_warning' => 'Keep taking your medicine. On the day of your test, take your blood pressure medicine as usual before your test.',
 				'next_page_yes' => $next_page,
 				'next_page_no' => $next_page,
 				'section_name' => "Managing your medication routine (Step 2 of $num_sections)",

@@ -7,7 +7,7 @@
     $page->render('views/header.php', $lookups);
 
 	$next_page = "aspirin.php";
-	$previous_page = 'blood_pressure';
+	$previous_page = 'blood_pressure.php';
 
 	$lookups = array(	'question' => '4) Do you take anti-inflammatories such as Advil or Ibuprofen?',
 				'image_1' => 'anti_inflammatories.jpg', 'height_1' => 209, 'width_1' => 582,
@@ -21,5 +21,6 @@
 
     require('logging/audit.php');
     if(!empty($_GET['auth'])) { $lookups = modulate_question_links(basename( __FILE__), $lookups, $_GET['auth']); }
+
     $page->render('views/question_answer.php', $lookups);
 ?>

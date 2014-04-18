@@ -12,9 +12,9 @@
 
 	$lookups = array(	'question' => '2) Do you take diabetes medicine?',
 						'image_1' => 'diabetes_pills.png', 'height_1' => 260, 'width_1' => 640,
-						'image_2' => 'diabetes_pills_no.png', 'height_2' => 260, 'width_2' => 640,
-						'notify_type' => 'danger',
-						'question_warning' => 'Take your diabetes medicine until the night BEFORE your colonoscopy. Then, do not take your diabetes medicine on the morning of the test. Resume these medicines after the test.',
+						'image_2' => 'diabetes_pills.png', 'height_2' => 260, 'width_2' => 640,
+						'notify_type' => 'warning',
+						'question_warning' => 'Give us a call if you are on diabetes medication.',
 						'next_page_yes' => $next_page,
 						'next_page_no' => $next_page,
 						'section_name' => "Managing your medication routine (Step 2 of $num_sections)",

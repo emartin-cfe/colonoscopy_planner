@@ -21,9 +21,8 @@
 
             <tr>
             <td class="time_of_day"><?=$appointment_time?><img src="images/afternoon.png" height="100"/></td>
-            <td class="what_you_eat">Eat a regular meal after your colonoscopy.</td>
-
-            <td class="what_you_drink">Done! No more restrictions on what you eat.</td>
+            <td class="what_you_eat"><div class='table_highlight'>Arrive for your colonoscopy</div>After colonoscopy, eat a regular meal.</td>
+            <td class="what_you_drink">Done! No more restrictions on what you can drink.</td>
             </tr>
 
         </tbody>

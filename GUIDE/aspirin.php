@@ -6,12 +6,12 @@
     $page = new Page();
     $page->render('views/header.php', $lookups);
 
-	$next_page = "blood_thinner.php";
+	$next_page = "anti_platelets.php";
 	$previous_page = "anti_inflammatories.php";
 
-	$lookups = array(	'question' => '5) Do you take aspirin or Plavix?',
-				'image_1' => 'aspirin.jpg', 'height_1' => 260, 'width_1' => 391,
-				'image_2' => 'aspirin_OK.jpg', 'height_2' => 260, 'width_2' => 391,
+	$lookups = array(	'question' => '5) Do you take aspirin once a day?',
+				'image_1' => 'aspirin.jpg', 'width_1' => 300,
+				'image_2' => 'aspirin_OK.jpg', 'height_2' => 229,
 				'notify_type' => 'success',
 				'question_warning' => 'You may continue to take this medicine as needed.',
 				'next_page_yes' => $next_page,

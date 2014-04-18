@@ -42,7 +42,7 @@
 	<div id="stylized" class="myform">
 		<form id="form" name="form" method="post" action="update_patient_2.php">
 			<h1>Patient details</h1>
-			<p>Click <a href='deactivate_patient.php?patient_id=<?=$patient_id?>' onclick='return confirm("Deactivate <?=$patient_id?> ?");'>here</a> to deactive this patient</p>
+			<p>Click <a href='deactivate_patient.php?patient_id=<?=$patient_id?>' onclick='return confirm("Deactivate <?=$patient_id?> ?");'>here</a> to remove this patient</p>
 
 			<label>Patient id</label>
 			<input type="text" name="patient_id" id="patient_id" value = "<?=$patient_id?>" readonly/>
@@ -72,16 +72,13 @@
 			<label>Bowel prep</label>
 			<select name="bowel_prep" id="bowel_prep">
 				<?php
-
-					# FIX THIS CODE GARBAGE LATER
-					if(strtolower($bowel_prep) == "moviprep") {
-						print 	'<option value="Moviprep" selected>Moviprep</option>' .
-								'<option value="PEG">PEG</option>';
-						}
-					else {
-						print 	'<option value="Moviprep">Moviprep</option>' .
-								'<option value="PEG" selected>PEG</option>';
-						}
+					$select_options = 	'<option value="Moviprep">Moviprep</option> ' .
+										'<option value="BiPeglyte">BiPeglyte</option>' .
+										'<option value="PicoSalax">PicoSalax</option>';
+					$search_term = "value=\"$bowel_prep\"";
+					$replace_term = "value=\"$bowel_prep\" selected";
+					$select_options = str_replace($search_term, $replace_term, $select_options);
+					print $select_options;
 				?>
 			</select>
 

@@ -27,7 +27,7 @@
 
             <tr>
             <td class="time_of_day">6:00 PM<img src="images/evening.png" height="100"/></td>
-            <td class="what_you_eat"><span class="title">Take prep</span><br/>* Clear liquids<br/>* No solid food<br/><img class="no_foods" src="images/no_solid_foods.png"/></td>
+            <td class="what_you_eat"><span class="title">Take <?=$bowel_prep?></span><br/>* Clear liquids<br/>* No solid food<br/><img class="no_foods" src="images/no_solid_foods.png"/></td>
             <td class="what_you_drink">* Drink 4 tall glasses of clear liquids<br/><img class="glasses" src="images/four_glasses.png"/></td>
             </tr>
 

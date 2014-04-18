@@ -4,9 +4,12 @@ table#schedule { width:650px; border-collapse:separate; border-spacing: 1.2em; m
 #schedule th { height:50px; font-weight:bold; }
 #schedule td { height:150px; padding-left:5px; padding-right:10px; }
 .time_of_day { width: 150px; }
-th, td.time_of_day { border: 1px solid #377bae; font-size:22px; color:#377bae; text-align:center; }
+th  { border: 1px solid #377bae; font-size:22px; color:#377bae; text-align:center; }
+td.time_of_day { border: 1px solid #377bae; font-size:20px; color:#377bae; text-align:center; }
 td.what_you_eat, td.what_you_drink { background-color: #377bae; font-size:16px; color:white; width:200px; max-width:200px; }
 span.title { font-size:22px; margin-bottom:5px; color:#FFAF44; }
+div.table_highlight { font-size:22px; margin-bottom:15px; }
+
 #schedule img { margin-top:5px; }
 img.glasses { margin-top:12px; width:150px; }
 img.two_glasses { margin-top:12px; width:80px; }
