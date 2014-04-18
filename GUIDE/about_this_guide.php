@@ -9,9 +9,11 @@
 
 	require('rendering/rendering_engine.php');
 	$page = new Page();
-	$page->render('views/header.php');
 
-	$lookups = array('auth' => $_GET['auth']);
+	$lookups = array('sha1' => $_GET['auth']);
+	$page->render('views/header.php', $lookups);
+
+	$lookups = array('sha1' => $_GET['auth']);
 	$page->render('views/splash_page.php', $lookups);
 ?>
 

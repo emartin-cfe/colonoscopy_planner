@@ -30,7 +30,7 @@
 	$from = "eric.gm.martin@gmail.com";
 	$subject = "Re: colonoscopy appointment";
 
-	$html = 	"<p>On behalf of Pacific Gastroenterology, I am contacting you because you have been scheduled for a colonoscopy on <b>$formatted_date</b> at St. Paul’s hospital (GI clinic). It is important that you prepare properly, as this will make it easier for both you and Dr. Enns to evaluate your colon properly. We have created an online guide that is tailored to your appointment. Please take the time to read it, as it contains advice that will maximize the benefit of the procedure - while minimizing discomfort.</p>" .
+	$html = 	"<p>On behalf of Pacific Gastroenterology, I am contacting you because you have been scheduled for a colonoscopy on <b>$formatted_date</b> at St. Paul's hospital (GI clinic). It is important that you prepare properly, as this will make it easier for both you and Dr. Enns to evaluate your colon properly. We have created an online guide that is tailored to your appointment. Please take the time to read it, as it contains advice that will improve the benefits procedure - while reducing discomfort.</p>" .
 				"<p>Please click this link to read your personal guide: $link</p>".
 				"<p>Feel free to contact me if you have anymore questions.</p>" .
 				"<p>Oliver Takach, Clinical Research Coordinator</p>";
@@ -47,8 +47,8 @@ $config=array(
     'host'      => 'ssl://smtp.googlemail.com',
     'port'      => 465,
     'auth'      => true,
-    'username'  => 'eric.gm.martin@gmail.com',
-    'password'  => 'Xtc036350858!'
+    'username'  => '<EMAIL>',
+    'password'  => '<PASSWORD>'
 );
 
 $mime = new Mail_Mime("\r\n");
