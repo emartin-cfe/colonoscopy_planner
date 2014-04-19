@@ -15,7 +15,9 @@ span.red { color:red; }
 span.green { color:green; }
 
 /* Hide the bullets in lists */
-ul.hidden_bullets { list-style-type: none; }
+ul.hidden_bullets {
+	list-style-type: none;
+	}
 
 /* Header navigation bar */
 div #top_navigation { width:100%; }

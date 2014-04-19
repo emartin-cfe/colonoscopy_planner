@@ -21,7 +21,7 @@
 
 			if (isset($next_page) && (substr($next_page,0,1) != "?")) {
 				echo 	"<div id='right_button'>\n" .
-						"\t\t\t<button type='button' class='btn btn-default btn-lg' onclick='window.location=\"$next_page\";'>\n" .
+						"\t\t\t<button type='button' class='btn btn-default btn-lg' onclick='document.getElementById(\"form\").submit()'>\n" .
 						"\t\t\tNext page\n" .
 						"\t\t\t<span class='glyphicon glyphicon-chevron-right'></span></button>\n" .
 						"\t\t</div>\n";

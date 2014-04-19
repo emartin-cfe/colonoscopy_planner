@@ -1,7 +1,8 @@
 <?php
 	require('dependencies/standard_imports.php');
 
-    if(!empty($_GET['auth'])) { $lookups['sha1'] = $_GET['auth']; $hash=$_GET['auth']; }
+	$lookups = array();
+    if(!empty($_GET['auth'])) { $lookups['sha1'] = $_GET['auth']; $hash=$_GET['auth']; } else { $hash = ''; }
     $page = new Page();
     $page->render('views/header.php', $lookups);
 

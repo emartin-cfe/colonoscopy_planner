@@ -1,5 +1,5 @@
 <?php
-	require('logging/audit.php');
+	require('dependencies/standard_imports.php');
 
 	if(!empty($_GET['auth'])) {
 		$lookups['sha1'] = $_GET['auth'];
@@ -15,9 +15,7 @@
 	$initials = $row['consent_initials'];
 	if ($initials != "") { header("Location: about_this_guide.php?auth=$sha1"); }
 
-	require('rendering/rendering_engine.php');
 	$page = new Page();
-
 	$lookups = array('auth' => $_GET['auth']);
 	$page->render('views/consent.php', $lookups);
 ?>
