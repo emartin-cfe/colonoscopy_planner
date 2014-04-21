@@ -39,14 +39,19 @@ ul.hidden_bullets li {
 
 		<p>
 
-		<form id="form" name="form" method="post" action="questionnaire_response.php?auth=<?=$sha1?>">
+		<?php
+			if(isset($sha1)) { print "<form id='form' name='form' method='post' action='questionnaire_response.php?auth=$sha1'>"; }
+			else { print "<form id='form' name='form' method='post' action='questionnaire_response.php'>"; }
+		?>
+
 			<ul class="hidden_bullets">
-				<li><input type="checkbox" name="fish_oil" value="checked" form="form"> Fish oil</li>
-				<li><input type="checkbox" name="diabetes" value="checked" form="form"> Diabetes medicine (Metformin, Actos, Byetta...)</li>
-				<li><input type="checkbox" name="anti_platelet" value="checked" form="form"> Anti-platelet drugs (Plavix)</li>
-				<li><input type="checkbox" name="blood_thinner" value="checked" form="form"> Blood thinners (Warfarin, Coumadin...)</li>
-				<li><input type="checkbox" name="blood_pressure" value="checked" form="form"> Blood pressure medicine</li>
- 				<li><input type="checkbox" name="advil" value="checked" form="form"> Advil, Ibuprofen, Aspirin</li>
+				<li><input type="checkbox" id="fish_oil" name="fish_oil"> Fish oil</li>
+				<li><input type="checkbox" id="diabetes" name="diabetes"> Diabetes medicine (Metformin, Actos, Byetta...)</li>
+				<li><input type="checkbox" id="anti_platelet" name="anti_platelet"> Anti-platelet drugs (Plavix)</li>
+				<li><input type="checkbox" id="blood_thinner" name="blood_thinner"> Blood thinners (Warfarin, Coumadin...)</li>
+				<li><input type="checkbox" id="blood_pressure" name="blood_pressure"> Blood pressure medicine</li>
+ 				<li><input type="checkbox" id="advil" name="advil"> Advil, Ibuprofen, Aspirin</li>
+				<li><input type="checkbox" id="no_drugs" name="no_drugs"> I do not take any of these drugs<li>
 			</ul>
 		</form>
 

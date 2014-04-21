@@ -20,7 +20,7 @@
         <uid><![CDATA[0031CEDB-B1C4-4298-AD89-105691790C65]]></uid>
     </SQLComment>
     <SQLTable>
-        <name><![CDATA[patient_notification.Patient_Assertions]]></name>
+        <name><![CDATA[patient_notification.Patient_Provided_Data]]></name>
         <schema><![CDATA[patient_notification]]></schema>
         <tableType><![CDATA[InnoDB]]></tableType>
         <location>

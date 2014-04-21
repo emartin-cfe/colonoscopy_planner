@@ -13,7 +13,8 @@
 		}
 
 	if ($proceed == 1) {
-		header('Location: preparing_for_your_colonoscopy_2.php?auth=' . $_GET['auth']);
+		if(isset($_GET['auth'])) { header('Location: preparing_for_your_colonoscopy_2.php?auth=' . $_GET['auth']); }
+		else { header('Location: preparing_for_your_colonoscopy_2.php'); }
 		exit;
 		}
 
@@ -24,5 +25,8 @@
 
     if(!empty($_GET['auth'])) { $lookups = modulate_links(basename( __FILE__), $lookups, $_GET['auth']); }
     $page->render('views/footer.php', $lookups);
+
+
+	# AT THIS POINT, UPLOAD THE PATIENT DATA
 
 ?>
