@@ -21,12 +21,12 @@
 
             <tr>
             <td class="time_of_day">1:00 PM<img src="images/afternoon.png"/></td>
-            <td class="what_you_eat">* Clear liquids<br/>* No solid food<br/><img class="no_foods" src="images/no_solid_foods.png"/></td>
+            <td class="what_you_eat"><?php if($afternoon_prep != "") { print "<span class='title'>$afternoon_prep</span><br/>"; }?>* Clear liquids<br/>* No solid food<br/><img class="no_foods" src="images/no_solid_foods.png"/></td>
             <td class="what_you_drink">* Drink 4 tall glasses of clear liquids<br/><img class="glasses" src="images/four_glasses.png"/></td>
             </tr>
 
             <tr>
-            <td class="time_of_day">6:00 PM<img src="images/evening.png" height="100"/></td>
+            <td class="time_of_day"><?=$last_time?><img src="images/evening.png" height="100"/></td>
             <td class="what_you_eat"><span class="title">Take <?=$bowel_prep?></span><br/>* Clear liquids<br/>* No solid food<br/><img class="no_foods" src="images/no_solid_foods.png"/></td>
             <td class="what_you_drink">* Drink 4 tall glasses of clear liquids<br/><img class="glasses" src="images/four_glasses.png"/></td>
             </tr>

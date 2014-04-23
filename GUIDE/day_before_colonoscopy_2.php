@@ -15,7 +15,8 @@
 	$next_page = "day_of_colonoscopy.php";
 	if ($row['single_or_split'] == 'single') { $next_page = "day_of_colonoscopy_SINGLE.php"; }
     $appointment_date = date($FULL_DT_FORMAT , strtotime($row['appointment_time'] . '- 1 day'));
-    $lookups = array('appointment_date' => $appointment_date, 'bowel_prep' => $row['bowel_prep']);
+	if(isset($row['bowel_prep'])) { $bowel_prep = $row['bowel_prep']; } else { $bowel_prep = 'laxative'; }
+    $lookups = array('appointment_date' => $appointment_date, 'bowel_prep' => $bowel_prep);
     $page->render('views/' . basename( __FILE__), $lookups);
 
 	$lookups = array(	'page_num' => '3', 'total_pages' => $num_sections, 'section_name' => 'Your calendar - One Day Before Your Colonoscopy',

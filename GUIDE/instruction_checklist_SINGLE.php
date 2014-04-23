@@ -27,7 +27,7 @@
 						'day_today' => $day_today, 'day_yesterday' => $day_yesterday,
 						'appointment_time' => $appointment_time, 'preparation_time' => $preparation_time, 'pickup_time' => $pickup_time);
  	if ($row['single_or_split'] == "split") { $page->render('views/' . basename( __FILE__), $lookups); }
-	else { $page->render('views/instruction_checklist.php', $lookups); }
+	else { $page->render('views/instruction_checklist_SINGLE.php', $lookups); }
 
 	$lookups = array(	'page_num' => '5', 'total_pages' => $num_sections, 'section_name' => 'Instruction Checklist',
 						'previous_page' => 'when_is_prep_complete.php', 'next_page' => 'frequently_asked_questions.php',

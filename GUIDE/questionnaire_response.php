@@ -28,5 +28,9 @@
 
 
 	# AT THIS POINT, UPLOAD THE PATIENT DATA
+	$query = 	"INSERT INTO <table> (field1, field2, field3, ...) " .
+				"VALUES ('value1', 'value2','value3', ...) " .
+				"ON DUPLICATE KEY UPDATE " .
+				"field1='value1', field2='value2', field3='value3', ...";
 
 ?>

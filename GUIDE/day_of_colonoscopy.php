@@ -15,9 +15,11 @@
 	$appointment_day = date($DAY_FORMAT, strtotime($row['appointment_time']));
 	$preparation_time = date($HOUR_FORMAT, strtotime($row['appointment_time'] . ' - 4 hours'));
 	$appointment_time = date($HOUR_FORMAT, strtotime($row['appointment_time']));
+	if(isset($row['bowel_prep'])) { $bowel_prep = $row['bowel_prep']; } else { $bowel_prep = 'laxative'; }
+
     $lookups = array('appointment_date' => $appointment_date, 'appointment_time' => $appointment_time,
 					 'preparation_time' => $preparation_time, 'appointment_day' => $appointment_day,
-					 'bowel_prep' => $row['bowel_prep']);
+					 'bowel_prep' => $bowel_prep);
     $page->render('views/' . basename( __FILE__), $lookups);
 
 

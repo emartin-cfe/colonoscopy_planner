@@ -7,7 +7,12 @@
 		<p>You <b>must</b> drink only <span class="image_popup"><a class="image_popup" href="images/drinks_ok.png" title="Do NOT drink cloudy liquids: it will make it hard for the GI doctor to see inside.">clear liquids</a></span> for breakfast, lunch, and dinner. Drink 12 full cups of clear liquids throughout the day in addition to your <?=$bowel_prep?>.</p>
 
 		<h2>Taking your bowel prep:</h2>
-		<p>You should already have your "bowel prep" (<i><?=$bowel_prep?></i>). If not, call your doctor. The instructions are inside the prep box. <b>Take the first part of your prep at 6:00 p.m.</b></p>
+		<p>You should already have your "bowel prep" (<i><?=$bowel_prep?></i>). If not, call your doctor. The instructions are inside the prep box.
+			<?php
+				if($bowel_prep == "PicoSalax") { print "<b>Take the first part of your prep at 1:00 p.m. and the second part of your prep at 6:00 p.m.</b>"; }
+				if($bowel_prep == "Moviprep") { print "<b>Take the first part of your prep at 6:00 p.m.</b>"; }
+			?>
+		</p>
 
 		<br/>
 

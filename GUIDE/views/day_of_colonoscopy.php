@@ -15,7 +15,13 @@
 
             <tr>
             <td class="time_of_day"><?=$preparation_time?><img src="images/morning.png"/></td>
-            <td class="what_you_eat"><span class="title">Take <?=$bowel_prep?></span><br/>* Clear liquids<br/>* No solid food<br/><img class="no_foods"src="images/no_solid_foods.png"/></td>
+            <td class="what_you_eat">
+			<?php
+				if($bowel_prep == "Moviprep") {
+					print "<span class='title'>Take $bowel_prep</span><br/>";
+					}
+			?>
+			* Clear liquids<br/>* No solid food<br/><img class="no_foods"src="images/no_solid_foods.png"/></td>
             <td class="what_you_drink">* Drink 2 tall glasses of clear liquids<br/><img class="two_glasses" src="images/two_glasses.png"/></td>
             </tr>
 

@@ -12,7 +12,19 @@
 	$row = $result->fetch_array();
 	$appointment_day = date($DAY_FORMAT, strtotime($row['appointment_time'] . '- 1 day'));
 	$appointment_date = date($CALENDAR_DT_FORMAT, strtotime($row['appointment_time'] . '- 1 day'));
-	$lookups = array( 'appointment_day' => $appointment_day, 'appointment_date' => $appointment_date, 'bowel_prep' => $row['bowel_prep']);
+
+	if ($row['bowel_prep'] == "PicoSalax") {
+		$afternoon_prep = "Take Pico-Salax";
+		$last_time = "5:00 PM";
+
+		$row['bowel_prep'] = "Pico-Salax and Dulcolax";
+		}
+	else {
+		$afternoon_prep = "";
+		$last_time = "6:00 PM";
+		}
+
+	$lookups = array( 'appointment_day' => $appointment_day, 'appointment_date' => $appointment_date, 'bowel_prep' => $row['bowel_prep'], 'afternoon_prep' => $afternoon_prep, 'last_time' => $last_time);
     $page->render('views/' . basename( __FILE__), $lookups);
 
 	$lookups = array(	'page_num' => '3', 'total_pages' => $num_sections, 'section_name' => 'Your calendar - ONE DAY Before Your Colonoscopy',
