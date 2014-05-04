@@ -19,7 +19,6 @@
 	</div>
 
 	<div id="top_navigation" class="btn-group btn-group">
-		<button type="button" class="btn btn-primary btn-lg" onclick="window.location='about_this_guide.php<?php if(!empty($lookups['sha1'])) { echo "?auth=" . $lookups['sha1']; }?>'">Start over</button>
 		<button type="button" class="btn btn-primary btn-lg" onclick="window.location='table_of_contents.php<?php if(!empty($lookups['sha1'])) { echo "?auth=" . $lookups['sha1']; }?>'">Table of contents</button>
 		<button type="button" class="btn btn-primary btn-lg" onclick="window.location='instruction_checklist.php<?php if(!empty($lookups['sha1'])) { echo "?auth=" . $lookups['sha1']; }?>'">Checklist</button>
 		<button type="button" class="btn btn-primary btn-lg" onclick="window.location='contact_info.php<?php if(!empty($lookups['sha1'])) { echo "?auth=" . $lookups['sha1']; }?>'">Clinic location</button>

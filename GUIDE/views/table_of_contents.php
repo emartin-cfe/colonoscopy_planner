@@ -3,7 +3,7 @@
 		<h2>What's Inside This Guide?</h2>
 
 		<ul id="toc">
-			<li><span>About this guide</span> <a href="about_this_guide.php<?php if(!empty($_GET['auth'])) { echo "?auth=" . $_GET['auth']; } ?>">Section 1</a></li>
+			<li><span>About this guide</span> <a href="about_this_guide.php<?php if(!empty($_GET['auth'])) { echo "?auth=" . $_GET['auth']; } ?>">Start the guide</a></li>
 			<li><span>Your medication routine</span><a href="preparing_for_your_colonoscopy.php<?php if(!empty($_GET['auth'])) { echo "?auth=" . $_GET['auth']; } ?>">Section 2</a></li>
 			<li><span>Calendar</span><a href="preparing_for_your_colonoscopy_2.php<?php if(!empty($_GET['auth'])) { echo "?auth=" . $_GET['auth']; } ?>">Section 3</a></li>
 			<li><span>What drinks are ok?</span><a href="what_drinks_are_ok.php<?php if(!empty($_GET['auth'])) { echo "?auth=" . $_GET['auth']; } ?>">Section 4</a></li>

@@ -51,7 +51,7 @@ ul.hidden_bullets li {
 				<li><input type="checkbox" id="blood_thinner" name="blood_thinner"> Blood thinners (Warfarin, Coumadin...)</li>
 				<li><input type="checkbox" id="blood_pressure" name="blood_pressure"> Blood pressure medicine</li>
  				<li><input type="checkbox" id="advil" name="advil"> Advil, Ibuprofen, Aspirin</li>
-				<li><input type="checkbox" id="no_drugs" name="no_drugs"> I do not take any of these drugs<li>
+				<li><input type="checkbox" id="no_drugs" name="no_drugs"><b> I do not take any of these drugs</b></li>
 			</ul>
 		</form>
 

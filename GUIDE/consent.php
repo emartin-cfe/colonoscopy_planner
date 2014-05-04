@@ -13,7 +13,7 @@
     $result = $mysqli->query($query);
 	$row = $result->fetch_array();
 	$initials = $row['consent_initials'];
-	if ($initials != "") { header("Location: about_this_guide.php?auth=$sha1"); }
+	if ($initials != "") { header("Location: table_of_contents.php?auth=$sha1"); exit; }
 
 	$page = new Page();
 	$lookups = array('auth' => $_GET['auth']);

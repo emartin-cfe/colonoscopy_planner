@@ -21,7 +21,7 @@ ul.hidden_bullets {
 
 /* Header navigation bar */
 div #top_navigation { width:100%; }
-div #top_navigation button { width:25%; }
+div #top_navigation button { width:33%; }
 
 /* The container holds everything and sets it to a fixed width */
 #container {

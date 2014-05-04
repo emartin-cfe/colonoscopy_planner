@@ -32,7 +32,7 @@
 			<label>Patient email</label>
 			<input type="email" name="patient_email" id="patient_email" required/>	
 
-			<label>Appointment date</label>
+			<label>Appointment arrival</label>
 			<div id="datetimepicker" class="input-append date">
 				<input type="datetime" name="appointment_date" id="appointment_date" required></input>
 				<span class="add-on" id="custom_date_selector"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>

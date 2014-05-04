@@ -1,4 +1,4 @@
-body { font-family:"Helvetica"; }
+table#schedule { font-family:"Helvetica"; }
 table#schedule { width:650px; border-collapse:separate; border-spacing: 1.1em; margin-left:auto; margin-right:auto; }
 #schedule tr { line-height: 25px; text-align:center; }
 #schedule th { height:50px; font-weight:bold; }

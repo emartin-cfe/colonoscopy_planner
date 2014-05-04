@@ -21,7 +21,7 @@
 			<tr>
 				<th scope='col'>Patient ID</th>
 				<th scope='col'>Patient email</th>
-				<th scope='col'>Appointment time</th>
+				<th scope='col'>Appointment arrival time</th>
 				<th scope='col'>Bowel prep</th>
 				<th scope='col'>Prep timing</th>
 				<th scope='col'>Status</th>
