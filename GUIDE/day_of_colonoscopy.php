@@ -9,13 +9,22 @@
     $mysqli = connect_to_db();
     if ($mysqli->connect_errno) { echo "Failed to connect to MySQL: " . $mysqli->connect_error; }
     $query = "SELECT appointment_time, bowel_prep FROM patient WHERE SHA1='$hash'";
-    $result = $mysqli->query($query);
-    $row = $result->fetch_array();
-    $appointment_date = date($CALENDAR_DT_FORMAT, strtotime($row['appointment_time']));
-	$appointment_day = date($DAY_FORMAT, strtotime($row['appointment_time']));
-	$preparation_time = date($HOUR_FORMAT, strtotime($row['appointment_time'] . ' - 4 hours'));
-	$appointment_time = date($HOUR_FORMAT, strtotime($row['appointment_time']));
-	if(isset($row['bowel_prep'])) { $bowel_prep = $row['bowel_prep']; } else { $bowel_prep = 'laxative'; }
+
+	if($result = $mysqli->query($query)) {
+    	$row = $result->fetch_array();
+    	$appointment_date = date($CALENDAR_DT_FORMAT, strtotime($row['appointment_time']));
+		$appointment_day = date($DAY_FORMAT, strtotime($row['appointment_time']));
+		$preparation_time = date($HOUR_FORMAT, strtotime($row['appointment_time'] . ' - 4 hours'));
+		$appointment_time = date($HOUR_FORMAT, strtotime($row['appointment_time']));
+		if(isset($row['bowel_prep'])) { $bowel_prep = $row['bowel_prep']; } else { $bowel_prep = 'laxative'; }
+		}
+	else {
+		$appointment_date = "Day of";
+		$appointment_day = "Appointment";
+		$preparation_time = "Prior to appointment";
+		$appointment_time = "Appointment";
+		$bowel_prep = "";
+		}
 
     $lookups = array('appointment_date' => $appointment_date, 'appointment_time' => $appointment_time,
 					 'preparation_time' => $preparation_time, 'appointment_day' => $appointment_day,

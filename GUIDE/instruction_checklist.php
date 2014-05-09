@@ -8,25 +8,29 @@
 
     $mysqli = connect_to_db();
     if ($mysqli->connect_errno) { echo "Failed to connect to MySQL: " . $mysqli->connect_error; }
-    $result = $mysqli->query( "SELECT appointment_time, bowel_prep, single_or_split FROM patient WHERE SHA1='$hash'");
-    $row = $result->fetch_array();
-	$appointment = $row['appointment_time'];
-    $date_today = date($FULL_DT_FORMAT, strtotime($appointment));
-	$date_yesterday = date($FULL_DT_FORMAT, strtotime($appointment . ' - 1 day'));
-	$date_fish_oil = date('F d', strtotime($appointment . ' - 2 day'));
-    $day_today  = date($DAY_FORMAT, strtotime($appointment));
-	$day_yesterday = date($DAY_FORMAT, strtotime($appointment . ' - 1 day'));
-	$appointment_time = date($HOUR_FORMAT, strtotime($appointment));
-    $preparation_time = date($HOUR_FORMAT, strtotime($appointment . ' - 4 hours'));
-	$pickup_time =  date($HOUR_FORMAT, strtotime($appointment . ' + 2 hours + 30 minutes'));
+	$query = "SELECT appointment_time, bowel_prep, single_or_split FROM patient WHERE SHA1='$hash'";
 
-	if(isset($row['bowel_prep'])) { $bowel_prep = $row['bowel_prep']; } else { $bowel_prep = 'bowel prep'; }
+    if($result = $mysqli->query($query)) {
+    	$row = $result->fetch_array();
+		}
 
-	$lookups = array(	'date_of_appointment' => $date_today, 'date_before_appointment' => $date_yesterday, 'single_or_split' => $row['single_or_split'],
+	$appointment = (isset($row)) ? $row['appointment_time'] : '';
+   	$date_today = $appointment != '' ? date($FULL_DT_FORMAT, strtotime($appointment)) : 'Day of appointment';
+	$date_yesterday = $appointment != '' ? date($FULL_DT_FORMAT, strtotime($appointment . ' - 1 day')) : 'Day before appointment';
+	$date_fish_oil = $appointment != '' ? date('F d', strtotime($appointment . ' - 2 day')): '2 days before';
+   	$day_today  = $appointment != '' ? date($DAY_FORMAT, strtotime($appointment)) : 'Today';
+	$day_yesterday = $appointment != '' ? date($DAY_FORMAT, strtotime($appointment . ' - 1 day')): 'WAKKA';
+	$appointment_time = $appointment != '' ? date($HOUR_FORMAT, strtotime($appointment)): '15 min before appointment';
+   	$preparation_time = $appointment != '' ? date($HOUR_FORMAT, strtotime($appointment . ' - 4 hours')): '?';
+	$pickup_time = $appointment != '' ? date($HOUR_FORMAT, strtotime($appointment . ' + 2 hours + 30 minutes')): '';
+	$bowel_prep = (isset($row) && isset($row['bowel_prep'])) ? $bowel_prep = $row['bowel_prep'] : $bowel_prep = 'bowel prep';
+	$single_or_split = (isset($row)) ? $row['single_or_split'] : '';
+
+	$lookups = array(	'date_of_appointment' => $date_today, 'date_before_appointment' => $date_yesterday, 'single_or_split' => $single_or_split,
 						'date_fish_oil' => $date_fish_oil, 'bowel_prep' => $bowel_prep,
 						'day_today' => $day_today, 'day_yesterday' => $day_yesterday,
 						'appointment_time' => $appointment_time, 'preparation_time' => $preparation_time, 'pickup_time' => $pickup_time);
- 	if ($row['single_or_split'] == "split") { $page->render('views/' . basename( __FILE__), $lookups); }
+ 	if ($single_or_split == "split") { $page->render('views/' . basename( __FILE__), $lookups); }
 	else { $page->render('views/instruction_checklist.php', $lookups); }
 
 	$lookups = array(	'page_num' => '5', 'total_pages' => $num_sections, 'section_name' => 'Instruction Checklist',

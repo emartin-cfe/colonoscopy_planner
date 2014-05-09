@@ -8,9 +8,14 @@
     $page->render('views/header.php', $lookups);
 
 	$mysqli = connect_to_db();
-    $result = $mysqli->query("SELECT bowel_prep FROM patient WHERE SHA1='$hash'");
-    $row = $result->fetch_array();
-	$lookups = array('bowel_prep' => $row['bowel_prep']);
+	$query = "SELECT bowel_prep FROM patient WHERE SHA1='$hash'";
+
+	$lookups = array();
+	if($result = $mysqli->query($query)) {
+    	$row = $result->fetch_array();
+		}
+	$lookups['bowel_prep'] = (isset($row)) ? $row['bowel_prep'] : 'bowel_prep';
+
     $page->render('views/' . basename( __FILE__), $lookups);
 
 	$lookups = array(	'total_pages' => $num_sections, 'section_name' => 'Frequently Asked Questions',
