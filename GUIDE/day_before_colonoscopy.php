@@ -9,11 +9,12 @@
 	$mysqli = connect_to_db();
 	if ($mysqli->connect_errno) { echo "Failed to connect to MySQL: " . $mysqli->connect_error; }
 	$query = "SELECT appointment_time, bowel_prep FROM patient WHERE SHA1='$hash'";
+
 	if ($result = $mysqli->query($query)) {
 		$row = $result->fetch_array();
 		$appointment_day = date($DAY_FORMAT, strtotime($row['appointment_time'] . '- 1 day'));
 		$appointment_date = date($CALENDAR_DT_FORMAT, strtotime($row['appointment_time'] . '- 1 day'));
-		$bowel_prep = $row['bowel_prep'];
+		$bowel_prep = (!empty($row['bowel_prep'])) ? $row['bowel_prep'] : 'bowel prep';
 		}
 	else {
 		$bowel_prep = "Prep";
