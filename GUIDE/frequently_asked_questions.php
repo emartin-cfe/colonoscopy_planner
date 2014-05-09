@@ -8,7 +8,7 @@
     $page->render('views/header.php', $lookups);
 
 	$mysqli = connect_to_db();
-	$query = "SELECT bowel_prep FROM patient WHERE SHA1='$hash'";
+	$query = "SELECT bowel_prep FROM Patient WHERE SHA1='$hash'";
 
 	$lookups = array();
 	if($result = $mysqli->query($query)) {

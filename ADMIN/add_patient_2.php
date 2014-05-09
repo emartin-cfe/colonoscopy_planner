@@ -21,7 +21,7 @@
 	$result = $mysqli->query($query);
 
 	# Now generate a link
-	$link = "<a href='http://24.87.64.193:10000/~emartin/patient_reminder/GUIDE/consent.php?auth=$SHA1'>http://aiddly.com/consent</a>";
+	$link = "<a href='http://aiddly.com/colonoscopy_planner/GUIDE/consent.php?auth=$SHA1'>http://aiddly.com/consent</a>";
 
 	$to = $patient_email;
 	$from = "pacific.gastro.associates@gmail.com";

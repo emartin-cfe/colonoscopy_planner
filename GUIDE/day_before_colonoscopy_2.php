@@ -8,7 +8,7 @@
 
     $mysqli = connect_to_db();
     if ($mysqli->connect_errno) { echo "Failed to connect to MySQL: " . $mysqli->connect_error; }
-    $query = "SELECT single_or_split, appointment_time, bowel_prep FROM patient WHERE SHA1='$hash'";
+    $query = "SELECT single_or_split, appointment_time, bowel_prep FROM Patient WHERE SHA1='$hash'";
 	$next_page = "day_of_colonoscopy.php";
 	if ($result = $mysqli->query($query)) {
     	$row = $result->fetch_array();
