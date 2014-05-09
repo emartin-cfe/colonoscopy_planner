@@ -4,9 +4,9 @@
 		$host = "";
 		$user = "";
 		$password = "";
-		$database = "";
+		$database = "patient_notification";
 
-		return new mysqli($host,$password,$user,$database);
+		return new mysqli($host,$user,$password,$database);
 		}
 
 ?>

@@ -6,7 +6,7 @@
 	if(isset($_GET['auth'])) { $lookups['sha1'] = $_GET['auth']; }
 	$page->render('views/header.php', $lookups);
 
-    if(!empty($_GET['auth'])) {
+	if(!empty($_GET['auth'])) {
 		$lookups['sha1'] = $_GET['auth'];
 		$sha1 = $_GET['auth'];
 		log_access($_GET['auth'], basename( __FILE__));
