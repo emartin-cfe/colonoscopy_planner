@@ -51,9 +51,9 @@
 	#$mime->setTXTBody($text);
 	$mime->setHTMLBody($html);
 
-	#$filepath="sample.txt";
-	#$fileContentType="text/plain";
-	#$mime->addAttachment($filepath,$fileContentType);
+	$filepath="resources/contact.html";
+	$fileContentType="text/html";
+	$mime->addAttachment($filepath,$fileContentType);
 
 	$body = $mime->get();
 	$headerInfo=array('From' => $from, 'To' => $to, 'Subject' => $subject);
